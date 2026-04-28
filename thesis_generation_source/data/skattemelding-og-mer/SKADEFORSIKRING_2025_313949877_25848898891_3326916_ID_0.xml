@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:skadeforsikring:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>313949877</organisasjonsnummer>
+            <organisasjonsnavn>NY SOSIAL TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-6ee27ef3-4a52-48ef-acbf-68a967d7f8ab</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>25848898891</foedselsnummer>
+                <navn>REFLEKTERENDE MARK</navn>
+            </oppgaveeier>
+            <skadenummer>3326916</skadenummer>
+            <forsikringstype>tingskade</forsikringstype>
+            <annenUtbetaling>172767</annenUtbetaling>
+            <renterAvErstatning>3458</renterAvErstatning>
+            <forsikringstakernavn>REFLEKTERENDE MARK</forsikringstakernavn>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumPeriodiskeUtbetalinger>0</sumPeriodiskeUtbetalinger>
+            <sumDagpengerBarneforsikring>0</sumDagpengerBarneforsikring>
+            <sumAnnenUtbetaling>172767</sumAnnenUtbetaling>
+            <sumReturAvPremie>0</sumReturAvPremie>
+            <sumRenterAvErstatning>3458</sumRenterAvErstatning>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:a-meldingen:v2_3">
+    <Leveranse>
+        <leveringstidspunkt>2026-02-27T11:35:23</leveringstidspunkt>
+        <kalendermaaned>2025-03</kalendermaaned>
+        <kildesystem>testdatagenerator-rst-sit-synt</kildesystem>
+        <meldingsId>TDG-b170f2fa-11aa-454d-b51d-d1646e2d73ff</meldingsId>
+        <opplysningspliktig>
+            <norskIdentifikator>311169254</norskIdentifikator>
+        </opplysningspliktig>
+        <oppgave>
+            <betalingsinformasjon>
+                <sumForskuddstrekk>1761</sumForskuddstrekk>
+            </betalingsinformasjon>
+            <virksomhet>
+                <norskIdentifikator>311169254</norskIdentifikator>
+                <inntektsmottaker>
+                    <norskIdentifikator>30878998363</norskIdentifikator>
+                    <forskuddstrekk>
+                        <beskrivelse>ordinaert</beskrivelse>
+                        <beloep>-1761</beloep>
+                    </forskuddstrekk>
+                    <inntekt>
+                        <fordel>kontantytelse</fordel>
+                        <utloeserArbeidsgiveravgift>false</utloeserArbeidsgiveravgift>
+                        <inngaarIGrunnlagForTrekk>true</inngaarIGrunnlagForTrekk>
+                        <beloep>7045</beloep>
+                        <ytelseFraOffentlige>
+                            <beskrivelse>sykepengerTilFiskerSomBareHarHyre</beskrivelse>
+                        </ytelseFraOffentlige>
+                    </inntekt>
+                </inntektsmottaker>
+            </virksomhet>
+        </oppgave>
+    </Leveranse>
+</melding>

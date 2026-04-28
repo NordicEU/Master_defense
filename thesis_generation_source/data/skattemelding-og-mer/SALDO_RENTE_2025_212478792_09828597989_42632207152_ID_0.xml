@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>212478792</organisasjonsnummer>
+            <organisasjonsnavn>SENTRAL PARAT TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-bc105269-a300-41e9-b977-8bcbffb4be56</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>09828597989</foedselsnummer>
+                <fornavn>EPISK</fornavn>
+                <etternavn>DAGELEV</etternavn>
+            </oppgaveeier>
+            <kontonummer>42632207152</kontonummer>
+            <skattekontoEgnethet>3</skattekontoEgnethet>
+            <innskudd>974276</innskudd>
+            <renter>
+                <opptjenteRenter>19486</opptjenteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>974276</sumInnskudd>
+            <sumUtlaan>0</sumUtlaan>
+            <sumOpptjenteRenter>19486</sumOpptjenteRenter>
+            <sumPaaloepteRenter>0</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

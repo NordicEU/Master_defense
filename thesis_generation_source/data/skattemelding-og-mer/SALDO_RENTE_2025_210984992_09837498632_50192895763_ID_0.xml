@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>210984992</organisasjonsnummer>
+            <organisasjonsnavn>GÅEN PUNKTLIG TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-20ab2390-89da-4982-9314-0c7d82663506</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>09837498632</foedselsnummer>
+                <fornavn>AKVATISK</fornavn>
+                <etternavn>BLANDING</etternavn>
+            </oppgaveeier>
+            <kontonummer>50192895763</kontonummer>
+            <utlaan>309451</utlaan>
+            <renter>
+                <paaloepteRenter>9284</paaloepteRenter>
+            </renter>
+            <kontotype>laanekontoIUtenlandskValuta</kontotype>
+            <valutakode>USD</valutakode>
+            <gevinstEllerTap>
+                <fradragsberettigetTap>3489</fradragsberettigetTap>
+            </gevinstEllerTap>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>0</sumInnskudd>
+            <sumUtlaan>309451</sumUtlaan>
+            <sumOpptjenteRenter>0</sumOpptjenteRenter>
+            <sumPaaloepteRenter>9284</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>3489</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

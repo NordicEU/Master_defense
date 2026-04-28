@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:livsforsikring:v1">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>213941232</organisasjonsnummer>
+            <organisasjonsnavn>BORETTSLAGET KONKRET ORDKNAPP HEST</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-dc073d5f-e132-41ee-b2f6-23cfd67eabd1</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>05928097805</foedselsnummer>
+                <fornavn>FAST</fornavn>
+                <etternavn>HINGST</etternavn>
+            </oppgaveeier>
+            <forsikringsnummer>148023582</forsikringsnummer>
+            <livdel>
+                <forsikringstype>kapitalforsikringMedSparing</forsikringstype>
+                <gjenkjoepsverdi>4793987</gjenkjoepsverdi>
+                <skattepliktigAvkastning>271349</skattepliktigAvkastning>
+            </livdel>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <livdelSumGjenkjoepsverdi>4793987</livdelSumGjenkjoepsverdi>
+            <livdelSumSkattepliktigAvkastning>271349</livdelSumSkattepliktigAvkastning>
+            <utbetalingSumSkattepliktigeBeloep>0</utbetalingSumSkattepliktigeBeloep>
+            <utbetalingSumSkattefrieBeloep>0</utbetalingSumSkattefrieBeloep>
+            <utbetalingSumFradragsberettigetTap>0</utbetalingSumFradragsberettigetTap>
+            <fortsettelsesforsikringSumInnestaaendePaaPremiefond>0</fortsettelsesforsikringSumInnestaaendePaaPremiefond>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

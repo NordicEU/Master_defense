@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>210529632</organisasjonsnummer>
+            <organisasjonsnavn>KLAR VIDSYNT KATT MAT</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-7952035a-c209-40cb-b56e-6494043cc294</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>27917599055</foedselsnummer>
+                <fornavn>FIOLETT</fornavn>
+                <etternavn>REKE</etternavn>
+            </oppgaveeier>
+            <kontonummer>43388695189</kontonummer>
+            <utlaan>363990</utlaan>
+            <renter>
+                <paaloepteRenter>10920</paaloepteRenter>
+            </renter>
+            <kontotype>laanekontoIUtenlandskValuta</kontotype>
+            <valutakode>USD</valutakode>
+            <gevinstEllerTap>
+                <fradragsberettigetTap>6026</fradragsberettigetTap>
+            </gevinstEllerTap>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>0</sumInnskudd>
+            <sumUtlaan>363990</sumUtlaan>
+            <sumOpptjenteRenter>0</sumOpptjenteRenter>
+            <sumPaaloepteRenter>10920</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>6026</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

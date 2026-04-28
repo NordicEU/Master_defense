@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>212611662</organisasjonsnummer>
+            <organisasjonsnavn>UNDERDANIG NONFIGURATIV TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-f302dc1e-5a21-401b-815d-f837f8e69fd5</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>20898598560</foedselsnummer>
+                <fornavn>TREIG</fornavn>
+                <etternavn>PORTO</etternavn>
+            </oppgaveeier>
+            <kontonummer>30707531882</kontonummer>
+            <skattekontoEgnethet>3</skattekontoEgnethet>
+            <innskudd>728192</innskudd>
+            <renter>
+                <opptjenteRenter>14564</opptjenteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>728192</sumInnskudd>
+            <sumUtlaan>0</sumUtlaan>
+            <sumOpptjenteRenter>14564</sumOpptjenteRenter>
+            <sumPaaloepteRenter>0</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

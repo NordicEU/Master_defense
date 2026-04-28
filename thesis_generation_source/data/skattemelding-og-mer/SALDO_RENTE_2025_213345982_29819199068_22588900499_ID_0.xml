@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>213345982</organisasjonsnummer>
+            <organisasjonsnavn>PROAKTIV STYRBAR TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-102b03df-875d-44a8-9ab0-ba4c30015292</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>29819199068</foedselsnummer>
+                <fornavn>KOMPATIBEL</fornavn>
+                <etternavn>FOXTROT</etternavn>
+            </oppgaveeier>
+            <kontonummer>22588900499</kontonummer>
+            <skattekontoEgnethet>3</skattekontoEgnethet>
+            <innskudd>947516</innskudd>
+            <renter>
+                <opptjenteRenter>18950</opptjenteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>947516</sumInnskudd>
+            <sumUtlaan>0</sumUtlaan>
+            <sumOpptjenteRenter>18950</sumOpptjenteRenter>
+            <sumPaaloepteRenter>0</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

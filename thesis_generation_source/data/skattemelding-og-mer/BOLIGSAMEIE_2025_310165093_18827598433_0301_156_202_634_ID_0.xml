@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligsameie:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>310165093</organisasjonsnummer>
+            <organisasjonsnavn>GLUPSK MANGE ISBJØRN SA</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-7fe3b8d3-79ec-47e2-b6c3-363601fb3f95</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>18827598433</foedselsnummer>
+                <navn>VIKTIG LAPP</navn>
+            </oppgaveeier>
+            <matrikkelnummer>
+                <kommunenummer>0301</kommunenummer>
+                <gaardsnummer>156</gaardsnummer>
+                <bruksnummer>202</bruksnummer>
+                <seksjonsnummer>634</seksjonsnummer>
+            </matrikkelnummer>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <andelSkattepliktigeInntekter>2964</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>549</andelFradragsberettigedeKostnader>
+            <andelFormue>93172</andelFormue>
+            <andelGjeld>38541</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelSkattepliktigeInntekter>2964</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>549</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>93172</sumAndelFormue>
+            <sumAndelGjeld>38541</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>210571132</organisasjonsnummer>
+            <organisasjonsnavn>FORSKJELLIG KONSEKVENT TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-048ff6e6-2846-4ab3-93a1-bb5457525460</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>03918399649</foedselsnummer>
+                <fornavn>FRUKTBAR</fornavn>
+                <etternavn>GITAR</etternavn>
+            </oppgaveeier>
+            <kontonummer>77157246898</kontonummer>
+            <skattekontoEgnethet>3</skattekontoEgnethet>
+            <utlaan>951765</utlaan>
+            <innskudd>378206</innskudd>
+            <renter>
+                <opptjenteRenter>7564</opptjenteRenter>
+                <paaloepteRenter>28553</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>378206</sumInnskudd>
+            <sumUtlaan>951765</sumUtlaan>
+            <sumOpptjenteRenter>7564</sumOpptjenteRenter>
+            <sumPaaloepteRenter>28553</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

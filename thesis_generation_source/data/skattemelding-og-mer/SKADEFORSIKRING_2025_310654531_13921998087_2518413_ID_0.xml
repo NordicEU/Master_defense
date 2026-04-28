@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:skadeforsikring:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>310654531</organisasjonsnummer>
+            <organisasjonsnavn>NYSGJERRIG GLOVARM TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-1bb09afa-3e77-40fc-834e-68a1b893c5f3</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>13921998087</foedselsnummer>
+                <navn>NATURSTRIDIG HJELM</navn>
+            </oppgaveeier>
+            <skadenummer>2518413</skadenummer>
+            <forsikringstype>personskade</forsikringstype>
+            <periodiskeUtbetalinger>44154</periodiskeUtbetalinger>
+            <forsikringstakernavn>NATURSTRIDIG HJELM</forsikringstakernavn>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumPeriodiskeUtbetalinger>44154</sumPeriodiskeUtbetalinger>
+            <sumDagpengerBarneforsikring>0</sumDagpengerBarneforsikring>
+            <sumAnnenUtbetaling>0</sumAnnenUtbetaling>
+            <sumReturAvPremie>0</sumReturAvPremie>
+            <sumRenterAvErstatning>0</sumRenterAvErstatning>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:skadeforsikring:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>310932558</organisasjonsnummer>
+            <organisasjonsnavn>OVERFØLSOM FARLIG STRUTS LTD</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-b16a8bca-1ce9-4906-b130-23ff91b9faaf</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>01848999799</foedselsnummer>
+                <navn>LITT RYGG</navn>
+            </oppgaveeier>
+            <skadenummer>9299813</skadenummer>
+            <forsikringstype>tingskade</forsikringstype>
+            <annenUtbetaling>309047</annenUtbetaling>
+            <renterAvErstatning>4532</renterAvErstatning>
+            <forsikringstakernavn>LITT RYGG</forsikringstakernavn>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumPeriodiskeUtbetalinger>0</sumPeriodiskeUtbetalinger>
+            <sumDagpengerBarneforsikring>0</sumDagpengerBarneforsikring>
+            <sumAnnenUtbetaling>309047</sumAnnenUtbetaling>
+            <sumReturAvPremie>0</sumReturAvPremie>
+            <sumRenterAvErstatning>4532</sumRenterAvErstatning>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

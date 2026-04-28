@@ -1,0 +1,84 @@
+---
+- name: Deploy containment component
+  hosts: containment_admin
+  become: false
+  vars:
+    repo_path: "/home/ubuntu/master_defense"
+    kube_path: "/home/ubuntu/master_defense/infra/k8s"
+    image_name: "quarantine-service:local"
+
+  tasks:
+    - name: Ensure repo exists
+      ansible.builtin.stat:
+        path: "{{ repo_path }}"
+      register: repo_stat
+
+    - name: Fail if repo is missing
+      ansible.builtin.fail:
+        msg: "Expected repository at {{ repo_path }} but it was not found."
+      when: not repo_stat.stat.exists
+
+    - name: Ensure quarantine ConfigMap env values are present
+      ansible.builtin.lineinfile:
+        path: "{{ repo_path }}/infra/k8s/quarantine-config.yaml"
+        regexp: "^  {{ item.key }}:"
+        line: "  {{ item.key }}: {{ item.value }}"
+      loop:
+        - { key: "QUARANTINE_RUNTIME_DIR", value: "/app/runtime/quarantine_cases" }
+        - { key: "AUDIT_LOG_DIR", value: "/app/runtime/audit_logs" }
+        - { key: "MINEFIELD_URL", value: "http://minefield-service:8006/defer" }
+        - { key: "DECEIVE_URL", value: "http://deceive-service:8007/deception" }
+        - { key: "HONEYPOT_URL", value: "http://honeypot-service:8005/review" }
+
+    - name: Build quarantine image
+      ansible.builtin.shell: |
+        docker build -t {{ image_name }} -f services/quarantine_service/Dockerfile .
+      args:
+        chdir: "{{ repo_path }}"
+
+    - name: Validate Kubernetes manifests
+      ansible.builtin.shell: |
+        kubectl apply --dry-run=client -k {{ kube_path }}
+      args:
+        chdir: "{{ repo_path }}"
+      register: dryrun_result
+      changed_when: false
+
+    - name: Show dry-run result
+      ansible.builtin.debug:
+        var: dryrun_result.stdout_lines
+
+    - name: Apply containment manifests
+      ansible.builtin.shell: |
+        kubectl apply -k {{ kube_path }}
+      args:
+        chdir: "{{ repo_path }}"
+      register: apply_result
+
+    - name: Show apply result
+      ansible.builtin.debug:
+        var: apply_result.stdout_lines
+
+    - name: Wait for quarantine deployment rollout
+      ansible.builtin.shell: |
+        kubectl rollout status deployment/quarantine-service -n quarantine-system --timeout=120s
+      args:
+        chdir: "{{ repo_path }}"
+      register: rollout_result
+      changed_when: false
+
+    - name: Show rollout result
+      ansible.builtin.debug:
+        var: rollout_result.stdout_lines
+
+    - name: Check containment metrics locally
+      ansible.builtin.shell: |
+        curl -s http://127.0.0.1:8003/quarantine/metrics || true
+      args:
+        chdir: "{{ repo_path }}"
+      register: metrics_result
+      changed_when: false
+
+    - name: Show containment metrics
+      ansible.builtin.debug:
+        var: metrics_result.stdout

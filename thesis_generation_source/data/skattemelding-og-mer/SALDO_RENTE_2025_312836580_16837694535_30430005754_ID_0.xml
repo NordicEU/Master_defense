@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>312836580</organisasjonsnummer>
+            <organisasjonsnavn>ROMANTISK LYKKELIG TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-c6d2768c-7eb9-4748-b610-e45c951a3b4e</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>16837694535</foedselsnummer>
+                <fornavn>OPPRETT</fornavn>
+                <etternavn>AKTERDEKK</etternavn>
+            </oppgaveeier>
+            <kontonummer>30430005754</kontonummer>
+            <skattekontoEgnethet>3</skattekontoEgnethet>
+            <utlaan>843942</utlaan>
+            <innskudd>466655</innskudd>
+            <renter>
+                <opptjenteRenter>9333</opptjenteRenter>
+                <paaloepteRenter>25318</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>466655</sumInnskudd>
+            <sumUtlaan>843942</sumUtlaan>
+            <sumOpptjenteRenter>9333</sumOpptjenteRenter>
+            <sumPaaloepteRenter>25318</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

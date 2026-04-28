@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:skadeforsikring:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>310002690</organisasjonsnummer>
+            <organisasjonsnavn>DEMOKRATISK OPPGITT APE</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-b595bc6b-4408-4aaa-af7e-cd0471c8a2c3</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>13821699627</foedselsnummer>
+                <navn>KONKURRANSEDYKTIG JORDMOR</navn>
+            </oppgaveeier>
+            <skadenummer>6644144</skadenummer>
+            <forsikringstype>personskade</forsikringstype>
+            <periodiskeUtbetalinger>168346</periodiskeUtbetalinger>
+            <forsikringstakernavn>KONKURRANSEDYKTIG JORDMOR</forsikringstakernavn>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumPeriodiskeUtbetalinger>168346</sumPeriodiskeUtbetalinger>
+            <sumDagpengerBarneforsikring>0</sumDagpengerBarneforsikring>
+            <sumAnnenUtbetaling>0</sumAnnenUtbetaling>
+            <sumReturAvPremie>0</sumReturAvPremie>
+            <sumRenterAvErstatning>0</sumRenterAvErstatning>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

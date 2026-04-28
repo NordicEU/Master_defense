@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: business-service
+  namespace: defense
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: business-service
+  template:
+    metadata:
+      labels:
+        app: business-service
+    spec:
+      containers:
+        - name: business-service
+          image: business-service:local
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8004
+          volumeMounts:
+            - name: quarantine-storage
+              mountPath: /app/runtime
+      volumes:
+        - name: quarantine-storage
+          persistentVolumeClaim:
+            claimName: quarantine-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: business-service
+  namespace: defense
+spec:
+  selector:
+    app: business-service
+  ports:
+    - port: 8004
+      targetPort: 8004

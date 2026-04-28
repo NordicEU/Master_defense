@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligsameie:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>313090078</organisasjonsnummer>
+            <organisasjonsnavn>EIERSEKSJONSSAMEIET FREIDIG UKONTROVERSIELL LØVE</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-2100549c-db00-40da-a8b3-f7ec8778a0d6</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>04889399355</foedselsnummer>
+                <navn>UMODEN PLANET</navn>
+            </oppgaveeier>
+            <matrikkelnummer>
+                <kommunenummer>0301</kommunenummer>
+                <gaardsnummer>7</gaardsnummer>
+                <bruksnummer>358</bruksnummer>
+                <seksjonsnummer>204</seksjonsnummer>
+            </matrikkelnummer>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <andelSkattepliktigeInntekter>848</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>1219</andelFradragsberettigedeKostnader>
+            <andelFormue>24434</andelFormue>
+            <andelGjeld>37182</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelSkattepliktigeInntekter>848</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>1219</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>24434</sumAndelFormue>
+            <sumAndelGjeld>37182</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

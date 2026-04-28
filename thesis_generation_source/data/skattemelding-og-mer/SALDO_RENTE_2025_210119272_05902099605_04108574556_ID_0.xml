@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>210119272</organisasjonsnummer>
+            <organisasjonsnavn>MATEMATISK KUNST TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-cb69ac00-ed15-49ac-9d7d-37be462ff4a9</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>05902099605</foedselsnummer>
+                <fornavn>FORSTÅELSESFULL</fornavn>
+                <etternavn>SVALE</etternavn>
+            </oppgaveeier>
+            <kontonummer>04108574556</kontonummer>
+            <skattekontoEgnethet>0</skattekontoEgnethet>
+            <innskudd>388063</innskudd>
+            <renter>
+                <opptjenteRenter>7761</opptjenteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>388063</sumInnskudd>
+            <sumUtlaan>0</sumUtlaan>
+            <sumOpptjenteRenter>7761</sumOpptjenteRenter>
+            <sumPaaloepteRenter>0</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>313190153</organisasjonsnummer>
+            <organisasjonsnavn>ULASTELIG SUBTIL KATT MALM</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-60d0c6d7-55c5-457c-9c1e-ada2c390bb80</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>24928898659</foedselsnummer>
+                <fornavn>SAKTE</fornavn>
+                <etternavn>HAVHEST</etternavn>
+            </oppgaveeier>
+            <kontonummer>39209975304</kontonummer>
+            <skattekontoEgnethet>1</skattekontoEgnethet>
+            <utlaan>1367916</utlaan>
+            <innskudd>276735</innskudd>
+            <renter>
+                <opptjenteRenter>5535</opptjenteRenter>
+                <paaloepteRenter>41037</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>276735</sumInnskudd>
+            <sumUtlaan>1367916</sumUtlaan>
+            <sumOpptjenteRenter>5535</sumOpptjenteRenter>
+            <sumPaaloepteRenter>41037</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

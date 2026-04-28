@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>213517902</organisasjonsnummer>
+            <organisasjonsnavn>OVERBEVISENDE TRIST TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-60883d0e-4ef4-46b4-a18b-79b5e153b05c</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>24821499867</foedselsnummer>
+                <fornavn>SYMPATISK</fornavn>
+                <etternavn>JUKEBOKS</etternavn>
+            </oppgaveeier>
+            <kontonummer>48866730213</kontonummer>
+            <skattekontoEgnethet>1</skattekontoEgnethet>
+            <innskudd>701014</innskudd>
+            <renter>
+                <opptjenteRenter>14020</opptjenteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>701014</sumInnskudd>
+            <sumUtlaan>0</sumUtlaan>
+            <sumOpptjenteRenter>14020</sumOpptjenteRenter>
+            <sumPaaloepteRenter>0</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

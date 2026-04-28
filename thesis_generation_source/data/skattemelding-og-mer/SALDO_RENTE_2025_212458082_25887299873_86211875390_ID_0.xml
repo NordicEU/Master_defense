@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>212458082</organisasjonsnummer>
+            <organisasjonsnavn>SKEPTISK STRAFFET TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-abf3f683-8736-4f3b-8d95-c73cabbdc658</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>25887299873</foedselsnummer>
+                <fornavn>UNØYAKTIG</fornavn>
+                <etternavn>MUNN</etternavn>
+            </oppgaveeier>
+            <kontonummer>86211875390</kontonummer>
+            <skattekontoEgnethet>2</skattekontoEgnethet>
+            <utlaan>157697</utlaan>
+            <innskudd>153355</innskudd>
+            <renter>
+                <opptjenteRenter>3067</opptjenteRenter>
+                <paaloepteRenter>4731</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>153355</sumInnskudd>
+            <sumUtlaan>157697</sumUtlaan>
+            <sumOpptjenteRenter>3067</sumOpptjenteRenter>
+            <sumPaaloepteRenter>4731</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

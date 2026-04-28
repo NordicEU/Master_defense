@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligselskap:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>311074598</organisasjonsnummer>
+            <organisasjonsnavn>AKSELERERENDE SIGEN HEST BORETTSLAG</organisasjonsnavn>
+        </oppgavegiver>
+        <boligselskapFormaal>bolig</boligselskapFormaal>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-9bcc1fd0-3fcc-4459-9a9d-c9e6fd6255a1</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>06929598146</foedselsnummer>
+                <navn>FORNUFTIG ENTREPRENØR</navn>
+            </oppgaveeier>
+            <boenhet>
+                <andelsnummer>476</andelsnummer>
+                <kommunenummer>0301</kommunenummer>
+                <bolignummer>H6700</bolignummer>
+                <gatenavnOgHusnummer>Storgata 18</gatenavnOgHusnummer>
+            </boenhet>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <eierandel>
+                <eierandelTeller>1</eierandelTeller>
+                <eierandelNevner>2</eierandelNevner>
+            </eierandel>
+            <bruksoverlatt>false</bruksoverlatt>
+            <andelLikningsverdiBoenhet>0</andelLikningsverdiBoenhet>
+            <andelSkattepliktigeInntekter>519</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>4174</andelFradragsberettigedeKostnader>
+            <andelFormue>20033</andelFormue>
+            <andelGjeld>576820</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelLikningsverdiBoenhet>0</sumAndelLikningsverdiBoenhet>
+            <sumAndelSkattepliktigeInntekter>519</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>4174</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>20033</sumAndelFormue>
+            <sumAndelGjeld>576820</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>212587532</organisasjonsnummer>
+            <organisasjonsnavn>USEDVANLIG ORDENTLIG TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-11abece9-4ae8-42d0-aa3c-087186152426</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>24818798942</foedselsnummer>
+                <fornavn>EFFEKTIV</fornavn>
+                <etternavn>BREIFLABB</etternavn>
+            </oppgaveeier>
+            <kontonummer>30963634397</kontonummer>
+            <utlaan>387420</utlaan>
+            <renter>
+                <paaloepteRenter>11623</paaloepteRenter>
+            </renter>
+            <kontotype>laanekontoIUtenlandskValuta</kontotype>
+            <valutakode>USD</valutakode>
+            <gevinstEllerTap>
+                <fradragsberettigetTap>3491</fradragsberettigetTap>
+            </gevinstEllerTap>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>0</sumInnskudd>
+            <sumUtlaan>387420</sumUtlaan>
+            <sumOpptjenteRenter>0</sumOpptjenteRenter>
+            <sumPaaloepteRenter>11623</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>3491</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

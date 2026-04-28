@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligsameie:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>312259516</organisasjonsnummer>
+            <organisasjonsnavn>SAMEIET FRISK ULASTELIG LØVE</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-b0454514-8c0d-457d-a591-e1e638ae98cc</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>13918199416</foedselsnummer>
+                <navn>INKLUDERENDE MÅLSETTING</navn>
+            </oppgaveeier>
+            <matrikkelnummer>
+                <kommunenummer>0301</kommunenummer>
+                <gaardsnummer>363</gaardsnummer>
+                <bruksnummer>159</bruksnummer>
+                <seksjonsnummer>275</seksjonsnummer>
+            </matrikkelnummer>
+            <eiertid>
+                <start>0102</start>
+                <slutt>3009</slutt>
+            </eiertid>
+            <andelSkattepliktigeInntekter>883</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>0</andelFradragsberettigedeKostnader>
+            <andelFormue>9898</andelFormue>
+            <andelGjeld>16861</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelSkattepliktigeInntekter>883</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>0</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>9898</sumAndelFormue>
+            <sumAndelGjeld>16861</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

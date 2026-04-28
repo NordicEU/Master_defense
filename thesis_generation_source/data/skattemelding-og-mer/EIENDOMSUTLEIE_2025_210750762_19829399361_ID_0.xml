@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<skatteinfoDokument skjemaversjon="v3_0" xmlns="urn:ske:fastsetting:skatteinfo:dokument:v3">
+    <header>
+        <dokumentidentifikator>d63fd1d2-5b23-4df7-a4ed-85c13c2d5a10</dokumentidentifikator>
+        <revisjonsnummer>1</revisjonsnummer>
+        <dokumentnavn>EIENDOMSUTLEIE:2025:210750762:19829399361_ID_0</dokumentnavn>
+        <dokumenttype>EIENDOMSUTLEIE</dokumenttype>
+        <dokumenttilstand>OPPRETTET</dokumenttilstand>
+        <gyldig>true</gyldig>
+        <gjelderInntektsaar>2025</gjelderInntektsaar>
+        <gjelderPeriode>2025</gjelderPeriode>
+        <gjelderPart>
+            <partsnummer>3000560754</partsnummer>
+            <identifiseringstype>PARTSNUMMER</identifiseringstype>
+        </gjelderPart>
+        <opphavspart>
+            <partsnummer>3001113783</partsnummer>
+        </opphavspart>
+        <kildereferanse>
+            <kildesystem>{TESTINNSENDING}</kildesystem>
+            <referanse>e92da7ed-e6cc-4ae2-88a5-c3904eba06ca</referanse>
+            <tidspunkt>2026-02-27T11:35:12.418+01:00</tidspunkt>
+        </kildereferanse>
+    </header>
+    <data>
+        <metadata>
+            <format>urn:no:skatteetaten:fastsetting:skatteinfo:utleieavfasteiendomfraformidlingsselskap:v1-0</format>
+            <bytes>2014</bytes>
+            <mimeType>application/xml</mimeType>
+            <sha1>54odGiUVFcl4apPipLxon/xXjcY=</sha1>
+        </metadata>
+        <content>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8b3BwZ2F2ZSBza2plbWF2ZXJzam9uPSJ2MV8wIiB4bWxucz0idXJuOm5vOnNrYXR0ZWV0YXRlbjpmYXN0c2V0dGluZzpza2F0dGVpbmZvOnV0bGVpZWF2ZmFzdGVpZW5kb21mcmFmb3JtaWRsaW5nc3NlbHNrYXA6djEtMCI+CiAgICA8b3BwZ2F2ZWdpdmVyPgogICAgICAgIDxwYXJ0c251bW1lcj4zMDAxMTEzNzgzPC9wYXJ0c251bW1lcj4KICAgICAgICA8b3JnYW5pc2Fzam9uc251bW1lcj4yMTA3NTA3NjI8L29yZ2FuaXNhc2pvbnNudW1tZXI+CiAgICAgICAgPG9yZ2FuaXNhc2pvbnNuYXZuPkZJTlRGw5hMRU5ERSBJTk5CUklOR0VOREUgR0lSQUZGIFNQQVJFQkFOSzwvb3JnYW5pc2Fzam9uc25hdm4+CiAgICA8L29wcGdhdmVnaXZlcj4KICAgIDxvcHBnYXZlZWllcj4KICAgICAgICA8cGVyc29ubGlnVXRsZWllcj4KICAgICAgICAgICAgPGZvZWRzZWxzbnVtbWVyPjE5ODI5Mzk5MzYxPC9mb2Vkc2Vsc251bW1lcj4KICAgICAgICAgICAgPG5hdm4+CiAgICAgICAgICAgICAgICA8Zm9ybmF2bj5LVUw8L2Zvcm5hdm4+CiAgICAgICAgICAgICAgICA8ZXR0ZXJuYXZuPlRST1NUPC9ldHRlcm5hdm4+CiAgICAgICAgICAgIDwvbmF2bj4KICAgICAgICAgICAgPGZvZWRzZWxzZGF0bz4xOTkzLTAyLTE5PC9mb2Vkc2Vsc2RhdG8+CiAgICAgICAgPC9wZXJzb25saWdVdGxlaWVyPgogICAgICAgIDxwYXJ0c251bW1lcj4zMDAwNTYwNzU0PC9wYXJ0c251bW1lcj4KICAgIDwvb3BwZ2F2ZWVpZXI+CiAgICA8dXRsZWllb2JqZWt0PgogICAgICAgIDx1dGxlaWVvYmpla3RJZGVudGlmaWthdG9yPgogICAgICAgICAgICA8dmVnYWRyZXNzZT4KICAgICAgICAgICAgICAgIDxhZHJlc3NlbmF2bj5TdW5ka2lsYnJ5Z2dqYTwvYWRyZXNzZW5hdm4+CiAgICAgICAgICAgICAgICA8YWRyZXNzZW51bW1lcj4KICAgICAgICAgICAgICAgICAgICA8aHVzbnVtbWVyPjE8L2h1c251bW1lcj4KICAgICAgICAgICAgICAgIDwvYWRyZXNzZW51bW1lcj4KICAgICAgICAgICAgICAgIDxicnVrc2VuaGV0c251bW1lcj5IMDEwMTwvYnJ1a3NlbmhldHNudW1tZXI+CiAgICAgICAgICAgICAgICA8cG9zdHN0ZWQ+CiAgICAgICAgICAgICAgICAgICAgPHBvc3RzdGVkc25hdm4+S1ZJVEVTRUlEPC9wb3N0c3RlZHNuYXZuPgogICAgICAgICAgICAgICAgICAgIDxwb3N0bnVtbWVyPjM4NTA8L3Bvc3RudW1tZXI+CiAgICAgICAgICAgICAgICA8L3Bvc3RzdGVkPgogICAgICAgICAgICAgICAgPGtvbW11bmVudW1tZXI+NDAyODwva29tbXVuZW51bW1lcj4KICAgICAgICAgICAgPC92ZWdhZHJlc3NlPgogICAgICAgIDwvdXRsZWllb2JqZWt0SWRlbnRpZmlrYXRvcj4KICAgICAgICA8dXRsZWllZm9yaG9sZD4KICAgICAgICAgICAgPHV0bGVpZUZyYU9nTWVkPjIwMjUtMDYtMDE8L3V0bGVpZUZyYU9nTWVkPgogICAgICAgICAgICA8dXRsZWllVGlsT2dNZWQ+MjAyNS0wOS0zMDwvdXRsZWllVGlsT2dNZWQ+CiAgICAgICAgICAgIDx1dGxlaWViZWxvZXA+MjQwMDA8L3V0bGVpZWJlbG9lcD4KICAgICAgICAgICAgPGdlYnlyQmV0YWx0QXZMZWlldGFrZXJGb3JVdGxlaWVmb3Job2xkZXQ+NDM2OTwvZ2VieXJCZXRhbHRBdkxlaWV0YWtlckZvclV0bGVpZWZvcmhvbGRldD4KICAgICAgICAgICAgPHByb3Zpc2pvbkJldGFsdEF2VXRsZWllckZvclV0bGVpZWZvcmhvbGRldD41MDcwPC9wcm92aXNqb25CZXRhbHRBdlV0bGVpZXJGb3JVdGxlaWVmb3Job2xkZXQ+CiAgICAgICAgICAgIDxrb250b0ZvclV0YmV0YWxpbmdUaWxVdGxlaWVyPgogICAgICAgICAgICAgICAgPG5vcnNrS29udG9udW1tZXI+ODAzOTk0MDU4MzU8L25vcnNrS29udG9udW1tZXI+CiAgICAgICAgICAgIDwva29udG9Gb3JVdGJldGFsaW5nVGlsVXRsZWllcj4KICAgICAgICA8L3V0bGVpZWZvcmhvbGQ+CiAgICA8L3V0bGVpZW9iamVrdD4KICAgIDxpbm50ZWt0c2Fhcj4yMDI1PC9pbm50ZWt0c2Fhcj4KPC9vcHBnYXZlPgo=</content>
+    </data>
+</skatteinfoDokument>

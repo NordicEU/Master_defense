@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligsameie:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>210953922</organisasjonsnummer>
+            <organisasjonsnavn>SAMEIET SVÆR BERIKENDE LØVE</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-fde28be6-638f-4b1c-8cbe-5e7a92dc2443</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>23828597159</foedselsnummer>
+                <navn>INNBRINGENDE RULLETRAPP</navn>
+            </oppgaveeier>
+            <matrikkelnummer>
+                <kommunenummer>0301</kommunenummer>
+                <gaardsnummer>312</gaardsnummer>
+                <bruksnummer>441</bruksnummer>
+                <seksjonsnummer>917</seksjonsnummer>
+            </matrikkelnummer>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <andelSkattepliktigeInntekter>1013</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>633</andelFradragsberettigedeKostnader>
+            <andelFormue>23116</andelFormue>
+            <andelGjeld>76397</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelSkattepliktigeInntekter>1013</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>633</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>23116</sumAndelFormue>
+            <sumAndelGjeld>76397</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

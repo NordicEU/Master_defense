@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligsameie:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>210507892</organisasjonsnummer>
+            <organisasjonsnavn>SAMEIET KOGNITIV ØVRIG LØVE</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-3b808eb9-821d-46d1-8116-2e9c63b55041</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>09818299351</foedselsnummer>
+                <navn>RESERVERT HETTE</navn>
+            </oppgaveeier>
+            <matrikkelnummer>
+                <kommunenummer>0301</kommunenummer>
+                <gaardsnummer>119</gaardsnummer>
+                <bruksnummer>130</bruksnummer>
+                <seksjonsnummer>240</seksjonsnummer>
+            </matrikkelnummer>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <andelSkattepliktigeInntekter>1326</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>1589</andelFradragsberettigedeKostnader>
+            <andelFormue>17840</andelFormue>
+            <andelGjeld>63726</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelSkattepliktigeInntekter>1326</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>1589</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>17840</sumAndelFormue>
+            <sumAndelGjeld>63726</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

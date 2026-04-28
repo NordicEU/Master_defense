@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:skadeforsikring:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>312635526</organisasjonsnummer>
+            <organisasjonsnavn>MOMENTAN SAMLET TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-5487cb20-48d0-4c5a-ba73-66ac44a6dbc0</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>26918899501</foedselsnummer>
+                <navn>MOTIVERT FAKKEL</navn>
+            </oppgaveeier>
+            <skadenummer>6396576</skadenummer>
+            <forsikringstype>tingskade</forsikringstype>
+            <annenUtbetaling>187642</annenUtbetaling>
+            <renterAvErstatning>694</renterAvErstatning>
+            <forsikringstakernavn>MOTIVERT FAKKEL</forsikringstakernavn>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumPeriodiskeUtbetalinger>0</sumPeriodiskeUtbetalinger>
+            <sumDagpengerBarneforsikring>0</sumDagpengerBarneforsikring>
+            <sumAnnenUtbetaling>187642</sumAnnenUtbetaling>
+            <sumReturAvPremie>0</sumReturAvPremie>
+            <sumRenterAvErstatning>694</sumRenterAvErstatning>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

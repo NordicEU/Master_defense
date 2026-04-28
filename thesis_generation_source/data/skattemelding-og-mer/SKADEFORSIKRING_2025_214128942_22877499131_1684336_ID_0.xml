@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:skadeforsikring:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>214128942</organisasjonsnummer>
+            <organisasjonsnavn>TOÅRIG DYNAMISK TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-4ce2a533-5c8d-490f-8873-dbcba9fee717</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>22877499131</foedselsnummer>
+                <navn>OPTIMISTISK SVIGERINNE</navn>
+            </oppgaveeier>
+            <skadenummer>1684336</skadenummer>
+            <forsikringstype>personskade</forsikringstype>
+            <periodiskeUtbetalinger>241343</periodiskeUtbetalinger>
+            <forsikringstakernavn>OPTIMISTISK SVIGERINNE</forsikringstakernavn>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumPeriodiskeUtbetalinger>241343</sumPeriodiskeUtbetalinger>
+            <sumDagpengerBarneforsikring>0</sumDagpengerBarneforsikring>
+            <sumAnnenUtbetaling>0</sumAnnenUtbetaling>
+            <sumReturAvPremie>0</sumReturAvPremie>
+            <sumRenterAvErstatning>0</sumRenterAvErstatning>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

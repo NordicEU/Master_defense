@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:skadeforsikring:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>310934690</organisasjonsnummer>
+            <organisasjonsnavn>TOM MATT TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-6a3fb85c-2dcd-4121-a88d-599268c6da7f</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>19841397072</foedselsnummer>
+                <navn>USYMMETRISK TIME</navn>
+            </oppgaveeier>
+            <skadenummer>1471277</skadenummer>
+            <forsikringstype>personskade</forsikringstype>
+            <periodiskeUtbetalinger>129142</periodiskeUtbetalinger>
+            <forsikringstakernavn>USYMMETRISK TIME</forsikringstakernavn>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumPeriodiskeUtbetalinger>129142</sumPeriodiskeUtbetalinger>
+            <sumDagpengerBarneforsikring>0</sumDagpengerBarneforsikring>
+            <sumAnnenUtbetaling>0</sumAnnenUtbetaling>
+            <sumReturAvPremie>0</sumReturAvPremie>
+            <sumRenterAvErstatning>0</sumRenterAvErstatning>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

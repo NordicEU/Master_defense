@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:skadeforsikring:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>312163640</organisasjonsnummer>
+            <organisasjonsnavn>TROVERDIG GLUPSK TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-7a63f2c6-c8b6-4aa8-b6bb-29bb75983f46</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>09871298510</foedselsnummer>
+                <navn>UPERSONLIG BAND</navn>
+            </oppgaveeier>
+            <skadenummer>1348925</skadenummer>
+            <forsikringstype>personskade</forsikringstype>
+            <periodiskeUtbetalinger>181599</periodiskeUtbetalinger>
+            <forsikringstakernavn>UPERSONLIG BAND</forsikringstakernavn>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumPeriodiskeUtbetalinger>181599</sumPeriodiskeUtbetalinger>
+            <sumDagpengerBarneforsikring>0</sumDagpengerBarneforsikring>
+            <sumAnnenUtbetaling>0</sumAnnenUtbetaling>
+            <sumReturAvPremie>0</sumReturAvPremie>
+            <sumRenterAvErstatning>0</sumRenterAvErstatning>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

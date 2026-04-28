@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<skatteinfoDokument skjemaversjon="v3_0" xmlns="urn:ske:fastsetting:skatteinfo:dokument:v3">
+    <header>
+        <dokumentidentifikator>dbff6494-43b9-41cc-af6d-965d11176564</dokumentidentifikator>
+        <revisjonsnummer>1</revisjonsnummer>
+        <dokumentnavn>KJOERETOEY_FORMUESVERDI_V2:2025:3000153576:OQ11824_ID_0</dokumentnavn>
+        <dokumenttype>KJOERETOEY_FORMUESVERDI_V2</dokumenttype>
+        <dokumenttilstand>OPPRETTET</dokumenttilstand>
+        <gyldig>true</gyldig>
+        <gjelderInntektsaar>2025</gjelderInntektsaar>
+        <gjelderPeriode>2025</gjelderPeriode>
+        <gjelderPart>
+            <partsnummer>3000153576</partsnummer>
+            <identifiseringstype>PARTSNUMMER</identifiseringstype>
+        </gjelderPart>
+        <opphavspart>
+            <partsnummer>3000153576</partsnummer>
+        </opphavspart>
+        <kildereferanse>
+            <kildesystem>{TESTINNSENDING}</kildesystem>
+            <referanse>65518c6c-1b2c-4372-aac8-535d9321b6cf</referanse>
+            <tidspunkt>2026-02-27T11:34:54.177+01:00</tidspunkt>
+        </kildereferanse>
+    </header>
+    <data>
+        <metadata>
+            <format>urn:ske:fastsetting:motorvogn:eieroversikt:v1</format>
+            <bytes>539</bytes>
+            <mimeType>application/xml</mimeType>
+            <sha1>Xw2lPD39iksja8JUD4DAd2txMUo=</sha1>
+        </metadata>
+        <content>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8a2pvZXJldG9leWVpZXIgeG1sbnM9InVybjpza2U6ZmFzdHNldHRpbmc6bW90b3J2b2duOmVpZXJvdmVyc2lrdDp2MSI+CiAgICA8cGFydHNudW1tZXI+MzAwMDE1MzU3NjwvcGFydHNudW1tZXI+CiAgICA8a2pvZXJldG9leT4KICAgICAgICA8a2plbm5lbWVya2U+T1ExMTgyNDwva2plbm5lbWVya2U+CiAgICAgICAgPGtqb2VyZXRvZXlncnVwcGU+MzExPC9ram9lcmV0b2V5Z3J1cHBlPgogICAgICAgIDxmb2Vyc3RlUmVnaXN0cmVyaW5nc2Fhcj4yMDIzPC9mb2Vyc3RlUmVnaXN0cmVyaW5nc2Fhcj4KICAgICAgICA8ZGF0b1JlZ2lzdHJlcnRQYWFFaWVyPjIwMjMtMDYtMjI8L2RhdG9SZWdpc3RyZXJ0UGFhRWllcj4KICAgICAgICA8ZmFicmlrYXRuYXZuPkx1aWdpPC9mYWJyaWthdG5hdm4+CiAgICAgICAgPGFudGF0dFZlcmRpU29tTnk+NzAyMTYwPC9hbnRhdHRWZXJkaVNvbU55PgogICAgPC9ram9lcmV0b2V5Pgo8L2tqb2VyZXRvZXllaWVyPgo=</content>
+    </data>
+</skatteinfoDokument>

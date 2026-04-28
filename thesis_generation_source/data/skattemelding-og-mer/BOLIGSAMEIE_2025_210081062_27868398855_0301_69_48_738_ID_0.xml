@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligsameie:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>210081062</organisasjonsnummer>
+            <organisasjonsnavn>SAMEIET DYR KONSERVATIV LØVE</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-d3285604-28ec-4825-a25c-d1dd339d9278</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>27868398855</foedselsnummer>
+                <navn>SPESIFIKK BADEAND</navn>
+            </oppgaveeier>
+            <matrikkelnummer>
+                <kommunenummer>0301</kommunenummer>
+                <gaardsnummer>69</gaardsnummer>
+                <bruksnummer>48</bruksnummer>
+                <seksjonsnummer>738</seksjonsnummer>
+            </matrikkelnummer>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <andelSkattepliktigeInntekter>4746</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>1490</andelFradragsberettigedeKostnader>
+            <andelFormue>66845</andelFormue>
+            <andelGjeld>97120</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelSkattepliktigeInntekter>4746</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>1490</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>66845</sumAndelFormue>
+            <sumAndelGjeld>97120</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

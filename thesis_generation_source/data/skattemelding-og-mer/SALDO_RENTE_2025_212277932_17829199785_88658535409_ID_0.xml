@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>212277932</organisasjonsnummer>
+            <organisasjonsnavn>FATTET KVADRATISK KATT ARISTOKRAT</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-f2c3f114-8d7f-4635-9127-52409d166417</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>17829199785</foedselsnummer>
+                <fornavn>FYSISK</fornavn>
+                <etternavn>FLYTTELASS</etternavn>
+            </oppgaveeier>
+            <kontonummer>88658535409</kontonummer>
+            <skattekontoEgnethet>3</skattekontoEgnethet>
+            <utlaan>1023632</utlaan>
+            <innskudd>529021</innskudd>
+            <renter>
+                <opptjenteRenter>10580</opptjenteRenter>
+                <paaloepteRenter>30709</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>529021</sumInnskudd>
+            <sumUtlaan>1023632</sumUtlaan>
+            <sumOpptjenteRenter>10580</sumOpptjenteRenter>
+            <sumPaaloepteRenter>30709</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

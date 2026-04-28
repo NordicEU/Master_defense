@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>213504762</organisasjonsnummer>
+            <organisasjonsnavn>LIKEGYLDIG SART STRUTS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-2bf8bf52-f7af-4dd2-9ad3-f9d3c5e25664</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>26869298580</foedselsnummer>
+                <fornavn>KLOK</fornavn>
+                <etternavn>HIMMEL</etternavn>
+            </oppgaveeier>
+            <kontonummer>46635688025</kontonummer>
+            <skattekontoEgnethet>1</skattekontoEgnethet>
+            <utlaan>70432</utlaan>
+            <innskudd>209590</innskudd>
+            <renter>
+                <opptjenteRenter>4192</opptjenteRenter>
+                <paaloepteRenter>2113</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>209590</sumInnskudd>
+            <sumUtlaan>70432</sumUtlaan>
+            <sumOpptjenteRenter>4192</sumOpptjenteRenter>
+            <sumPaaloepteRenter>2113</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

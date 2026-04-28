@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:a-meldingen:v2_3">
+    <Leveranse>
+        <leveringstidspunkt>2026-02-27T11:35:18</leveringstidspunkt>
+        <kalendermaaned>2025-06</kalendermaaned>
+        <kildesystem>testdatagenerator-rst-sit-synt</kildesystem>
+        <meldingsId>TDG-84424e11-3753-44c9-9d04-a782d7e4f363</meldingsId>
+        <opplysningspliktig>
+            <norskIdentifikator>311169254</norskIdentifikator>
+        </opplysningspliktig>
+        <oppgave>
+            <betalingsinformasjon>
+                <sumForskuddstrekk>7228</sumForskuddstrekk>
+            </betalingsinformasjon>
+            <virksomhet>
+                <norskIdentifikator>311169254</norskIdentifikator>
+                <inntektsmottaker>
+                    <norskIdentifikator>25927199931</norskIdentifikator>
+                    <forskuddstrekk>
+                        <beskrivelse>ordinaert</beskrivelse>
+                        <beloep>-7228</beloep>
+                    </forskuddstrekk>
+                    <inntekt>
+                        <fordel>kontantytelse</fordel>
+                        <utloeserArbeidsgiveravgift>false</utloeserArbeidsgiveravgift>
+                        <inngaarIGrunnlagForTrekk>true</inngaarIGrunnlagForTrekk>
+                        <beloep>28912</beloep>
+                        <ytelseFraOffentlige>
+                            <beskrivelse>foreldrepenger</beskrivelse>
+                        </ytelseFraOffentlige>
+                    </inntekt>
+                </inntektsmottaker>
+            </virksomhet>
+        </oppgave>
+    </Leveranse>
+</melding>

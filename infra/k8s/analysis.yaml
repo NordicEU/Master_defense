@@ -1,0 +1,138 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rule-engine
+  namespace: defense
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rule-engine
+  template:
+    metadata:
+      labels:
+        app: rule-engine
+    spec:
+      containers:
+        - name: rule-engine
+          image: rule-engine:local
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8011
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rule-engine
+  namespace: defense
+spec:
+  selector:
+    app: rule-engine
+  ports:
+    - port: 8011
+      targetPort: 8011
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: anomaly-scorer
+  namespace: defense
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: anomaly-scorer
+  template:
+    metadata:
+      labels:
+        app: anomaly-scorer
+    spec:
+      containers:
+        - name: anomaly-scorer
+          image: anomaly-scorer:local
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8012
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: anomaly-scorer
+  namespace: defense
+spec:
+  selector:
+    app: anomaly-scorer
+  ports:
+    - port: 8012
+      targetPort: 8012
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: context-validator
+  namespace: defense
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: context-validator
+  template:
+    metadata:
+      labels:
+        app: context-validator
+    spec:
+      containers:
+        - name: context-validator
+          image: context-validator:local
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8013
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: context-validator
+  namespace: defense
+spec:
+  selector:
+    app: context-validator
+  ports:
+    - port: 8013
+      targetPort: 8013
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: semantic-assist
+  namespace: defense
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: semantic-assist
+  template:
+    metadata:
+      labels:
+        app: semantic-assist
+    spec:
+      containers:
+        - name: semantic-assist
+          image: semantic-assist:local
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8014
+          envFrom:
+            - configMapRef:
+                name: defense-config
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: semantic-assist
+  namespace: defense
+spec:
+  selector:
+    app: semantic-assist
+  ports:
+    - port: 8014
+      targetPort: 8014

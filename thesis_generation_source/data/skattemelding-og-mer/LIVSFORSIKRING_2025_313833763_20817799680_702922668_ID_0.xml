@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:livsforsikring:v1">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>313833763</organisasjonsnummer>
+            <organisasjonsnavn>VRIEN UTHOLDEN APE</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-651886af-f103-42ec-bf3c-f518e40e0a3b</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>20817799680</foedselsnummer>
+                <fornavn>NESNØDD</fornavn>
+                <etternavn>ADMINISTRASJONSBYGNING</etternavn>
+            </oppgaveeier>
+            <forsikringsnummer>702922668</forsikringsnummer>
+            <livdel>
+                <forsikringstype>kapitalforsikringMedSparing</forsikringstype>
+                <gjenkjoepsverdi>3404169</gjenkjoepsverdi>
+                <skattepliktigAvkastning>119789</skattepliktigAvkastning>
+            </livdel>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <livdelSumGjenkjoepsverdi>3404169</livdelSumGjenkjoepsverdi>
+            <livdelSumSkattepliktigAvkastning>119789</livdelSumSkattepliktigAvkastning>
+            <utbetalingSumSkattepliktigeBeloep>0</utbetalingSumSkattepliktigeBeloep>
+            <utbetalingSumSkattefrieBeloep>0</utbetalingSumSkattefrieBeloep>
+            <utbetalingSumFradragsberettigetTap>0</utbetalingSumFradragsberettigetTap>
+            <fortsettelsesforsikringSumInnestaaendePaaPremiefond>0</fortsettelsesforsikringSumInnestaaendePaaPremiefond>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligsameie:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>313277151</organisasjonsnummer>
+            <organisasjonsnavn>GÅEN MANGE LØVE SAMEIE</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-9acf5426-fae5-4448-810e-22947014c0db</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>29869099854</foedselsnummer>
+                <navn>REDD ARTISJOKK</navn>
+            </oppgaveeier>
+            <matrikkelnummer>
+                <kommunenummer>0301</kommunenummer>
+                <gaardsnummer>189</gaardsnummer>
+                <bruksnummer>490</bruksnummer>
+                <seksjonsnummer>935</seksjonsnummer>
+            </matrikkelnummer>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <andelSkattepliktigeInntekter>4950</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>1870</andelFradragsberettigedeKostnader>
+            <andelFormue>41979</andelFormue>
+            <andelGjeld>2963</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelSkattepliktigeInntekter>4950</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>1870</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>41979</sumAndelFormue>
+            <sumAndelGjeld>2963</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

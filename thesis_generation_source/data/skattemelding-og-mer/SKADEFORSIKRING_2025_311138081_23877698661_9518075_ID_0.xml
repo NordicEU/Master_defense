@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:skadeforsikring:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>311138081</organisasjonsnummer>
+            <organisasjonsnavn>KONSEKVENT KUNST TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-cb02ae12-1433-4c1b-ad24-02fe7f2b2182</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>23877698661</foedselsnummer>
+                <navn>STRENG ALGORITME</navn>
+            </oppgaveeier>
+            <skadenummer>9518075</skadenummer>
+            <forsikringstype>personskade</forsikringstype>
+            <annenUtbetaling>1213522</annenUtbetaling>
+            <renterAvErstatning>391</renterAvErstatning>
+            <forsikringstakernavn>STRENG ALGORITME</forsikringstakernavn>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumPeriodiskeUtbetalinger>0</sumPeriodiskeUtbetalinger>
+            <sumDagpengerBarneforsikring>0</sumDagpengerBarneforsikring>
+            <sumAnnenUtbetaling>1213522</sumAnnenUtbetaling>
+            <sumReturAvPremie>0</sumReturAvPremie>
+            <sumRenterAvErstatning>391</sumRenterAvErstatning>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

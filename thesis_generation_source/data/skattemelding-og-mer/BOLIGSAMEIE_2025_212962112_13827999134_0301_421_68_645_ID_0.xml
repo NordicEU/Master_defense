@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligsameie:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>212962112</organisasjonsnummer>
+            <organisasjonsnavn>SAMEIET FREIDIG TRIST LØVE</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-b012e139-1bed-4ae8-af5d-d6c0ad499b3d</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>13827999134</foedselsnummer>
+                <navn>SMAL DIESEL</navn>
+            </oppgaveeier>
+            <matrikkelnummer>
+                <kommunenummer>0301</kommunenummer>
+                <gaardsnummer>421</gaardsnummer>
+                <bruksnummer>68</bruksnummer>
+                <seksjonsnummer>645</seksjonsnummer>
+            </matrikkelnummer>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <andelSkattepliktigeInntekter>4778</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>903</andelFradragsberettigedeKostnader>
+            <andelFormue>15051</andelFormue>
+            <andelGjeld>23687</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelSkattepliktigeInntekter>4778</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>903</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>15051</sumAndelFormue>
+            <sumAndelGjeld>23687</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

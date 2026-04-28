@@ -1,0 +1,11 @@
+auth_url                      = "https://your-openstack-auth-url"
+region                        = "RegionOne"
+application_credential_id     = "REPLACE_ME"
+application_credential_secret = "REPLACE_ME"
+
+image_name          = "Ubuntu 22.04"
+flavor_name         = "m1.small"
+network_name        = "oslomet"
+keypair_name        = "your-keypair-name"
+security_group_name = "default"
+instance_name       = "containment-admin"

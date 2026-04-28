@@ -1,0 +1,10 @@
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: quarantine-service-pdb
+  namespace: quarantine-system
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels:
+      app: quarantine-service

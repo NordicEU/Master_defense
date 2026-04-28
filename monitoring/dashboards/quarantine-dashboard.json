@@ -1,0 +1,98 @@
+{
+  "title": "Quarantine Service Dashboard",
+  "uid": "quarantine-service-dashboard",
+  "timezone": "browser",
+  "schemaVersion": 39,
+  "version": 1,
+  "refresh": "10s",
+  "panels": [
+    {
+      "title": "Total Quarantine Cases",
+      "type": "stat",
+      "targets": [
+        {
+          "expr": "quarantine_cases_total",
+          "legendFormat": "total"
+        }
+      ],
+      "gridPos": { "h": 4, "w": 6, "x": 0, "y": 0 }
+    },
+    {
+      "title": "Release Eligible Cases",
+      "type": "stat",
+      "targets": [
+        {
+          "expr": "quarantine_release_eligible_cases",
+          "legendFormat": "release eligible"
+        }
+      ],
+      "gridPos": { "h": 4, "w": 6, "x": 6, "y": 0 }
+    },
+    {
+      "title": "Escalation Eligible Cases",
+      "type": "stat",
+      "targets": [
+        {
+          "expr": "quarantine_escalation_eligible_cases",
+          "legendFormat": "escalation eligible"
+        }
+      ],
+      "gridPos": { "h": 4, "w": 6, "x": 12, "y": 0 }
+    },
+    {
+      "title": "Audit Events Total",
+      "type": "stat",
+      "targets": [
+        {
+          "expr": "quarantine_audit_events_total",
+          "legendFormat": "audit events"
+        }
+      ],
+      "gridPos": { "h": 4, "w": 6, "x": 18, "y": 0 }
+    },
+    {
+      "title": "Cases by State",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "quarantine_cases_by_state",
+          "legendFormat": "{{state}}"
+        }
+      ],
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 4 }
+    },
+    {
+      "title": "Cases by Severity",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "quarantine_cases_by_severity",
+          "legendFormat": "{{severity}}"
+        }
+      ],
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 4 }
+    },
+    {
+      "title": "Cases by Isolation Mode",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "quarantine_cases_by_isolation_mode",
+          "legendFormat": "{{mode}}"
+        }
+      ],
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 12 }
+    },
+    {
+      "title": "Observations Total",
+      "type": "stat",
+      "targets": [
+        {
+          "expr": "quarantine_observations_total",
+          "legendFormat": "observations"
+        }
+      ],
+      "gridPos": { "h": 4, "w": 6, "x": 12, "y": 12 }
+    }
+  ]
+}

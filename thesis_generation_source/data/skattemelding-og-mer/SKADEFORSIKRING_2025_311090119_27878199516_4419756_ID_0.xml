@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:skadeforsikring:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>311090119</organisasjonsnummer>
+            <organisasjonsnavn>HUMORISTISK SELVHJULPEN KATT TØRKETROMMEL</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-3c44bc83-1b08-495d-9d02-6cfef0a76a6c</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>27878199516</foedselsnummer>
+                <navn>UNYTTIG GRØNNSISIK</navn>
+            </oppgaveeier>
+            <skadenummer>4419756</skadenummer>
+            <forsikringstype>tingskade</forsikringstype>
+            <annenUtbetaling>274510</annenUtbetaling>
+            <renterAvErstatning>2059</renterAvErstatning>
+            <forsikringstakernavn>UNYTTIG GRØNNSISIK</forsikringstakernavn>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumPeriodiskeUtbetalinger>0</sumPeriodiskeUtbetalinger>
+            <sumDagpengerBarneforsikring>0</sumDagpengerBarneforsikring>
+            <sumAnnenUtbetaling>274510</sumAnnenUtbetaling>
+            <sumReturAvPremie>0</sumReturAvPremie>
+            <sumRenterAvErstatning>2059</sumRenterAvErstatning>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

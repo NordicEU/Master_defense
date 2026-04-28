@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>210566082</organisasjonsnummer>
+            <organisasjonsnavn>LYSTIG ULYDIG TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-b5ee8b4d-1ffb-4c7c-8d98-e148f54a8338</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>25848898891</foedselsnummer>
+                <fornavn>REFLEKTERENDE</fornavn>
+                <etternavn>MARK</etternavn>
+            </oppgaveeier>
+            <kontonummer>52491616393</kontonummer>
+            <skattekontoEgnethet>1</skattekontoEgnethet>
+            <utlaan>480036</utlaan>
+            <innskudd>291019</innskudd>
+            <renter>
+                <opptjenteRenter>5820</opptjenteRenter>
+                <paaloepteRenter>14401</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>291019</sumInnskudd>
+            <sumUtlaan>480036</sumUtlaan>
+            <sumOpptjenteRenter>5820</sumOpptjenteRenter>
+            <sumPaaloepteRenter>14401</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

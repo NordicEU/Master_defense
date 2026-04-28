@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:skadeforsikring:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>312533405</organisasjonsnummer>
+            <organisasjonsnavn>HEVNGJERRIG TREKANTET TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-87c6de4e-74fa-496d-9c54-b2ed6263b0a3</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>05828996608</foedselsnummer>
+                <navn>ENKEL MOR</navn>
+            </oppgaveeier>
+            <skadenummer>1658749</skadenummer>
+            <forsikringstype>personskade</forsikringstype>
+            <annenUtbetaling>1797717</annenUtbetaling>
+            <renterAvErstatning>2980</renterAvErstatning>
+            <forsikringstakernavn>ENKEL MOR</forsikringstakernavn>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumPeriodiskeUtbetalinger>0</sumPeriodiskeUtbetalinger>
+            <sumDagpengerBarneforsikring>0</sumDagpengerBarneforsikring>
+            <sumAnnenUtbetaling>1797717</sumAnnenUtbetaling>
+            <sumReturAvPremie>0</sumReturAvPremie>
+            <sumRenterAvErstatning>2980</sumRenterAvErstatning>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

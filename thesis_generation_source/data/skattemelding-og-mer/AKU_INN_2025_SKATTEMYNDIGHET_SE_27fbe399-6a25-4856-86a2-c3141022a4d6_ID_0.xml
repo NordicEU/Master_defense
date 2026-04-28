@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<skatteinfoDokument skjemaversjon="v3_0" xmlns="urn:ske:fastsetting:skatteinfo:dokument:v3">
+    <header>
+        <dokumentidentifikator>4a7cf5f7-0c66-47a9-94aa-4ab6f0cb1d7d</dokumentidentifikator>
+        <revisjonsnummer>1</revisjonsnummer>
+        <dokumentnavn>AKU_INN:2025:SKATTEMYNDIGHET:SE:27fbe399-6a25-4856-86a2-c3141022a4d6_ID_0</dokumentnavn>
+        <dokumenttype>AKU_INN</dokumenttype>
+        <dokumenttilstand>OPPRETTET</dokumenttilstand>
+        <gyldig>true</gyldig>
+        <gjelderInntektsaar>2025</gjelderInntektsaar>
+        <gjelderPeriode>2025</gjelderPeriode>
+        <gjelderPart>
+            <partsnummer>3000518400</partsnummer>
+            <identifiseringstype>PARTSNUMMER</identifiseringstype>
+        </gjelderPart>
+        <opphavspart>
+            <partsnummer>3001739966</partsnummer>
+        </opphavspart>
+        <kildereferanse>
+            <kildesystem>{TESTINNSENDING}</kildesystem>
+            <referanse>388c8b0e-5234-4f9e-abb4-9c1366bebd2f</referanse>
+            <tidspunkt>2026-02-27T11:35:10.370+01:00</tidspunkt>
+        </kildereferanse>
+    </header>
+    <data>
+        <metadata>
+            <format>urn:ske:fastsetting:skatteinfo:automatiskkontrolloppgaveutland:v1_0</format>
+            <bytes>1713</bytes>
+            <mimeType>application/xml</mimeType>
+            <sha1>HG+6dLQfyTjWIZZMNVO8uc2qwOU=</sha1>
+        </metadata>
+        <content>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8b3BwZ2F2ZSBza2plbWF2ZXJzam9uPSJ2MV8wIiB4bWxucz0idXJuOnNrZTpmYXN0c2V0dGluZzpza2F0dGVpbmZvOmF1dG9tYXRpc2trb250cm9sbG9wcGdhdmV1dGxhbmQ6djFfMCI+CiAgICA8RG9jU3BlYz4KICAgICAgICA8RG9jVHlwZUluZGljPjE8L0RvY1R5cGVJbmRpYz4KICAgICAgICA8RG9jUmVmSWQ+Mzk1NTY0MmItMjI4Ny00MGNhLThhYzItN2UxMjg2OTVhZjJlPC9Eb2NSZWZJZD4KICAgIDwvRG9jU3BlYz4KICAgIDxTZW5kaW5nQ291bnRyeT5TRTwvU2VuZGluZ0NvdW50cnk+CiAgICA8UmVjaXBpZW50QmVuZWZpY2lhbE93bmVyIG9lY2RMZWdhbFR5cGU9IjAxIj4KICAgICAgICA8UmVzQ291bnRyeUNvZGU+Tk88L1Jlc0NvdW50cnlDb2RlPgogICAgICAgIDxQYXJ0eUlkIHBhcnR5SWRUeXBlPSJUSU4iIGlzc3VlZEJ5PSJOTyI+MjA4NjkwOTg2MDU8L1BhcnR5SWQ+CiAgICAgICAgPE5hbWUgbmFtZVR5cGU9IkluZGl2Ij4KICAgICAgICAgICAgPE5hbWVGcmVlPlDDhUxJVEVMSUcgRsOYTEVMU0U8L05hbWVGcmVlPgogICAgICAgIDwvTmFtZT4KICAgICAgICA8QWRkcmVzcyBsZWdhbEFkZHJlc3NUeXBlPSJyZXNpZGVudGlhbE9yQnVzaW5lc3MiPgogICAgICAgICAgICA8Q291bnRyeUNvZGU+Tk88L0NvdW50cnlDb2RlPgogICAgICAgICAgICA8QWRkcmVzc0ZyZWU+V2VyZ2VsYW5kc3ZlaWVuIDE5QSAwMTY3IE9TTE88L0FkZHJlc3NGcmVlPgogICAgICAgIDwvQWRkcmVzcz4KICAgIDwvUmVjaXBpZW50QmVuZWZpY2lhbE93bmVyPgogICAgPEFjdHVhbFBheWVyIG9lY2RMZWdhbFR5cGU9IjA1Ij4KICAgICAgICA8UmVzQ291bnRyeUNvZGU+U0U8L1Jlc0NvdW50cnlDb2RlPgogICAgICAgIDxQYXJ0eUlkIHBhcnR5SWRUeXBlPSJUSU4iIGlzc3VlZEJ5PSJTRSI+MTY3NTI5Mzc3OTwvUGFydHlJZD4KICAgICAgICA8TmFtZT4KICAgICAgICAgICAgPE5hbWVGcmVlPlRERyBUZXN0IFBheW1lbnRzIFNFPC9OYW1lRnJlZT4KICAgICAgICA8L05hbWU+CiAgICAgICAgPEFkZHJlc3M+CiAgICAgICAgICAgIDxDb3VudHJ5Q29kZT5TRTwvQ291bnRyeUNvZGU+CiAgICAgICAgICAgIDxBZGRyZXNzRnJlZT5Qb3N0Ym94IDkwOTAgIDEyMzQ1IFRlc3RieTwvQWRkcmVzc0ZyZWU+CiAgICAgICAgPC9BZGRyZXNzPgogICAgPC9BY3R1YWxQYXllcj4KICAgIDxQYXltZW50RGF0YT4KICAgICAgICA8VGF4WWVhckVuZD4yMDI1LTEyLTMxPC9UYXhZZWFyRW5kPgogICAgICAgIDxPRUNEUGF5bWVudFR5cGU+MjE8L09FQ0RQYXltZW50VHlwZT4KICAgICAgICA8U3BlY2lmaWNQYXltZW50VHlwZSBzcGVjaWZpY1BheW1lbnRUeXBlUWxmPSIgICI+MTIwPC9TcGVjaWZpY1BheW1lbnRUeXBlPgogICAgICAgIDxQYXltZW50IHBheW1lbnRRbGY9ImdpcCI+CiAgICAgICAgICAgIDxNb25BbW50IGN1cnJDb2RlPSJTRUsiPjkzODE0PC9Nb25BbW50PgogICAgICAgICAgICA8b21yZWduZXRCZWxvZXBOT0sgdmFsdXRha3Vycz0iMC45NSI+ODkxMjM8L29tcmVnbmV0QmVsb2VwTk9LPgogICAgICAgIDwvUGF5bWVudD4KICAgIDwvUGF5bWVudERhdGE+CiAgICA8T3RoZXJJbmZvPkxhZ3QgYXYgVGVzdGRhdGFnZW5lcmF0b3IgZm9yIHBhcnQgbWVkIFBhcnRzbnVtbWVyPTMwMDA1MTg0MDA8L090aGVySW5mbz4KPC9vcHBnYXZlPgo=</content>
+    </data>
+</skatteinfoDokument>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>213862502</organisasjonsnummer>
+            <organisasjonsnavn>ELASTISK LETT TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-2e90038d-3bba-406b-b3de-382bae89dbb0</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>24867396132</foedselsnummer>
+                <fornavn>RETTFERDIG</fornavn>
+                <etternavn>NETTHINNE</etternavn>
+            </oppgaveeier>
+            <kontonummer>82161188839</kontonummer>
+            <skattekontoEgnethet>0</skattekontoEgnethet>
+            <utlaan>1230410</utlaan>
+            <innskudd>483735</innskudd>
+            <renter>
+                <opptjenteRenter>9675</opptjenteRenter>
+                <paaloepteRenter>36912</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>483735</sumInnskudd>
+            <sumUtlaan>1230410</sumUtlaan>
+            <sumOpptjenteRenter>9675</sumOpptjenteRenter>
+            <sumPaaloepteRenter>36912</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

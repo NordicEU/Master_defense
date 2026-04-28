@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>210781242</organisasjonsnummer>
+            <organisasjonsnavn>TROSSIG VIDSYNT TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-d884b577-72cd-4b0e-9bc7-41ead65b9572</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>09838499373</foedselsnummer>
+                <fornavn>FASCINERENDE</fornavn>
+                <etternavn>NATT</etternavn>
+            </oppgaveeier>
+            <kontonummer>36080146757</kontonummer>
+            <utlaan>171978</utlaan>
+            <renter>
+                <paaloepteRenter>5159</paaloepteRenter>
+            </renter>
+            <kontotype>laanekontoIUtenlandskValuta</kontotype>
+            <valutakode>USD</valutakode>
+            <gevinstEllerTap>
+                <fradragsberettigetTap>7819</fradragsberettigetTap>
+            </gevinstEllerTap>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>0</sumInnskudd>
+            <sumUtlaan>171978</sumUtlaan>
+            <sumOpptjenteRenter>0</sumOpptjenteRenter>
+            <sumPaaloepteRenter>5159</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>7819</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

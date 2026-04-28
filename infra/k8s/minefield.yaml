@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: minefield-service
+  namespace: defense
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: minefield-service
+  template:
+    metadata:
+      labels:
+        app: minefield-service
+    spec:
+      containers:
+        - name: minefield-service
+          image: minefield-service:local
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8006
+          envFrom:
+            - configMapRef:
+                name: defense-config
+          volumeMounts:
+            - name: quarantine-storage
+              mountPath: /app/runtime
+      volumes:
+        - name: quarantine-storage
+          persistentVolumeClaim:
+            claimName: quarantine-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: minefield-service
+  namespace: defense
+spec:
+  selector:
+    app: minefield-service
+  ports:
+    - port: 8006
+      targetPort: 8006

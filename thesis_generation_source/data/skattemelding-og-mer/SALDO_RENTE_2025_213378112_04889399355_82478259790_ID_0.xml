@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>213378112</organisasjonsnummer>
+            <organisasjonsnavn>AKVATISK KOMPLETT HUND DA</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-8c8aad8d-b8cf-4c50-bd6b-66fe760fa86a</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>04889399355</foedselsnummer>
+                <fornavn>UMODEN</fornavn>
+                <etternavn>PLANET</etternavn>
+            </oppgaveeier>
+            <kontonummer>82478259790</kontonummer>
+            <skattekontoEgnethet>2</skattekontoEgnethet>
+            <utlaan>1338431</utlaan>
+            <innskudd>555781</innskudd>
+            <renter>
+                <opptjenteRenter>11116</opptjenteRenter>
+                <paaloepteRenter>40153</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>555781</sumInnskudd>
+            <sumUtlaan>1338431</sumUtlaan>
+            <sumOpptjenteRenter>11116</sumOpptjenteRenter>
+            <sumPaaloepteRenter>40153</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>213264362</organisasjonsnummer>
+            <organisasjonsnavn>STIFTELSEN RELEVANT TALEFØR KROKODILLE</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-0abfd0fd-4824-4ecb-96ba-e1b7b8d9d309</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>10888399009</foedselsnummer>
+                <fornavn>SJOKKERT</fornavn>
+                <etternavn>ASTERISK</etternavn>
+            </oppgaveeier>
+            <kontonummer>01413364376</kontonummer>
+            <skattekontoEgnethet>2</skattekontoEgnethet>
+            <utlaan>1012930</utlaan>
+            <innskudd>236456</innskudd>
+            <renter>
+                <opptjenteRenter>4729</opptjenteRenter>
+                <paaloepteRenter>30388</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>236456</sumInnskudd>
+            <sumUtlaan>1012930</sumUtlaan>
+            <sumOpptjenteRenter>4729</sumOpptjenteRenter>
+            <sumPaaloepteRenter>30388</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

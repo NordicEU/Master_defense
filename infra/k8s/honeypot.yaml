@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: honeypot-service
+  namespace: defense
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: honeypot-service
+  template:
+    metadata:
+      labels:
+        app: honeypot-service
+    spec:
+      containers:
+        - name: honeypot-service
+          image: honeypot-service:local
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8005
+          envFrom:
+            - configMapRef:
+                name: defense-config
+          volumeMounts:
+            - name: quarantine-storage
+              mountPath: /app/runtime
+      volumes:
+        - name: quarantine-storage
+          persistentVolumeClaim:
+            claimName: quarantine-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: honeypot-service
+  namespace: defense
+spec:
+  selector:
+    app: honeypot-service
+  ports:
+    - port: 8005
+      targetPort: 8005

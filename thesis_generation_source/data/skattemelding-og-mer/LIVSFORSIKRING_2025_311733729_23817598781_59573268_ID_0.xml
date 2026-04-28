@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:livsforsikring:v1">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>311733729</organisasjonsnummer>
+            <organisasjonsnavn>UROKKELIG SIST TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-44b2e9db-1a38-4232-9b2a-1f7b92fe1566</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>23817598781</foedselsnummer>
+                <fornavn>FIN</fornavn>
+                <etternavn>HANDLINGSROM</etternavn>
+            </oppgaveeier>
+            <forsikringsnummer>59573268</forsikringsnummer>
+            <livdel>
+                <forsikringstype>kapitalforsikringMedSparing</forsikringstype>
+                <gjenkjoepsverdi>9655183</gjenkjoepsverdi>
+                <skattepliktigAvkastning>91198</skattepliktigAvkastning>
+            </livdel>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <livdelSumGjenkjoepsverdi>9655183</livdelSumGjenkjoepsverdi>
+            <livdelSumSkattepliktigAvkastning>91198</livdelSumSkattepliktigAvkastning>
+            <utbetalingSumSkattepliktigeBeloep>0</utbetalingSumSkattepliktigeBeloep>
+            <utbetalingSumSkattefrieBeloep>0</utbetalingSumSkattefrieBeloep>
+            <utbetalingSumFradragsberettigetTap>0</utbetalingSumFradragsberettigetTap>
+            <fortsettelsesforsikringSumInnestaaendePaaPremiefond>0</fortsettelsesforsikringSumInnestaaendePaaPremiefond>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

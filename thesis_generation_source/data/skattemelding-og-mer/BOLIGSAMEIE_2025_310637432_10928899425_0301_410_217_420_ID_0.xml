@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligsameie:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>310637432</organisasjonsnummer>
+            <organisasjonsnavn>SAMEIET OPPSTEMT FERSK LØVE</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-71a61b95-a633-41bf-8abd-d91612c2203e</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>10928899425</foedselsnummer>
+                <navn>AKTVERDIG TALLERKEN</navn>
+            </oppgaveeier>
+            <matrikkelnummer>
+                <kommunenummer>0301</kommunenummer>
+                <gaardsnummer>410</gaardsnummer>
+                <bruksnummer>217</bruksnummer>
+                <seksjonsnummer>420</seksjonsnummer>
+            </matrikkelnummer>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <andelSkattepliktigeInntekter>400</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>1142</andelFradragsberettigedeKostnader>
+            <andelFormue>29815</andelFormue>
+            <andelGjeld>78649</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelSkattepliktigeInntekter>400</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>1142</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>29815</sumAndelFormue>
+            <sumAndelGjeld>78649</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

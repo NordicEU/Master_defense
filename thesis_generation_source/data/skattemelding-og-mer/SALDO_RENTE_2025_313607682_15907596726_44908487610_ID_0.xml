@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>313607682</organisasjonsnummer>
+            <organisasjonsnavn>UMUSIKALSK LYKKELIG PIGGSVIN</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-b804e041-c050-4a64-b3d3-96c5866994f8</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>15907596726</foedselsnummer>
+                <fornavn>FLYKTIG</fornavn>
+                <etternavn>DOKTORGRAD</etternavn>
+            </oppgaveeier>
+            <kontonummer>44908487610</kontonummer>
+            <skattekontoEgnethet>1</skattekontoEgnethet>
+            <utlaan>44736</utlaan>
+            <innskudd>352276</innskudd>
+            <renter>
+                <opptjenteRenter>7046</opptjenteRenter>
+                <paaloepteRenter>1342</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>352276</sumInnskudd>
+            <sumUtlaan>44736</sumUtlaan>
+            <sumOpptjenteRenter>7046</sumOpptjenteRenter>
+            <sumPaaloepteRenter>1342</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

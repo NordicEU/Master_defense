@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>310654531</organisasjonsnummer>
+            <organisasjonsnavn>NYSGJERRIG GLOVARM TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-a618b893-6bfe-491e-b88d-b709df4bcd14</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>27927197494</foedselsnummer>
+                <fornavn>STILLE</fornavn>
+                <etternavn>KONVOLUTT</etternavn>
+            </oppgaveeier>
+            <kontonummer>46335731123</kontonummer>
+            <skattekontoEgnethet>1</skattekontoEgnethet>
+            <utlaan>517572</utlaan>
+            <innskudd>82957</innskudd>
+            <renter>
+                <opptjenteRenter>1659</opptjenteRenter>
+                <paaloepteRenter>15527</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>82957</sumInnskudd>
+            <sumUtlaan>517572</sumUtlaan>
+            <sumOpptjenteRenter>1659</sumOpptjenteRenter>
+            <sumPaaloepteRenter>15527</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligselskap:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>313213323</organisasjonsnummer>
+            <organisasjonsnavn>KOGNITIV MINKENDE TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <boligselskapFormaal>bolig</boligselskapFormaal>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-079865f1-4555-420b-ade4-d6520e11d3f6</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>16847697087</foedselsnummer>
+                <navn>SAMTIDIG MØLL</navn>
+            </oppgaveeier>
+            <boenhet>
+                <aksjeboenhetsnummer>1381</aksjeboenhetsnummer>
+                <kommunenummer>0301</kommunenummer>
+                <bolignummer>H2960</bolignummer>
+                <gatenavnOgHusnummer>Storgata 74</gatenavnOgHusnummer>
+            </boenhet>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <eierandel>
+                <eierandelTeller>1</eierandelTeller>
+                <eierandelNevner>2</eierandelNevner>
+            </eierandel>
+            <bruksoverlatt>false</bruksoverlatt>
+            <andelLikningsverdiBoenhet>0</andelLikningsverdiBoenhet>
+            <andelSkattepliktigeInntekter>1012</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>6327</andelFradragsberettigedeKostnader>
+            <andelFormue>10265</andelFormue>
+            <andelGjeld>165727</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelLikningsverdiBoenhet>0</sumAndelLikningsverdiBoenhet>
+            <sumAndelSkattepliktigeInntekter>1012</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>6327</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>10265</sumAndelFormue>
+            <sumAndelGjeld>165727</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

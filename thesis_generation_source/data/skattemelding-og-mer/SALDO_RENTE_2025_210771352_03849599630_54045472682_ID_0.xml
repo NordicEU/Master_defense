@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>210771352</organisasjonsnummer>
+            <organisasjonsnavn>HURTIG KONGE TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-640a0d55-1da8-4ef7-9eb9-8560e878ddfa</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>03849599630</foedselsnummer>
+                <fornavn>SOSIAL</fornavn>
+                <etternavn>ALPELUE</etternavn>
+            </oppgaveeier>
+            <kontonummer>54045472682</kontonummer>
+            <skattekontoEgnethet>2</skattekontoEgnethet>
+            <utlaan>461576</utlaan>
+            <innskudd>366651</innskudd>
+            <renter>
+                <opptjenteRenter>7333</opptjenteRenter>
+                <paaloepteRenter>13847</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>366651</sumInnskudd>
+            <sumUtlaan>461576</sumUtlaan>
+            <sumOpptjenteRenter>7333</sumOpptjenteRenter>
+            <sumPaaloepteRenter>13847</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

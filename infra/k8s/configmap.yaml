@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: defense-config
+  namespace: defense
+data:
+  GATEWAY_URL: "http://gateway-service:8000/route"
+  DECISION_URL: "http://decision-service:8002/decide"
+  CONTAIN_URL: "http://quarantine-service:8003/quarantine"
+  ALLOW_URL: "http://business-service:8004/process"
+  HONEYPOT_URL: "http://honeypot-service:8005/review"
+  MINEFIELD_URL: "http://minefield-service:8006/defer"
+  DECEIVE_URL: "http://deceiver-service:8007/deception"
+  QUARANTINE_URL: "http://quarantine-service:8003/quarantine"
+  DECEIVER_URL: "http://deceiver-service:8007/deception"
+  RULE_ENGINE_URL: "http://rule-engine:8011/analyze"
+  ANOMALY_SCORER_URL: "http://anomaly-scorer:8012/score"
+  CONTEXT_VALIDATOR_URL: "http://context-validator:8013/validate"
+  SEMANTIC_ASSIST_URL: "http://semantic-assist:8014/analyze"
+  OLLAMA_HOST: "http://ollama:11434"
+  SUBJECT_CONTROL_URL: "http://quarantine-service:8003/subjects"

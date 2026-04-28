@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligsameie:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>213470752</organisasjonsnummer>
+            <organisasjonsnavn>SAMEIET TURKIS SLEM LØVE</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-ec86a3a6-ebc7-486f-8977-08aa5aa08b65</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>18848599669</foedselsnummer>
+                <navn>AUTONOM FORDYPNING</navn>
+            </oppgaveeier>
+            <matrikkelnummer>
+                <kommunenummer>0301</kommunenummer>
+                <gaardsnummer>160</gaardsnummer>
+                <bruksnummer>353</bruksnummer>
+                <seksjonsnummer>621</seksjonsnummer>
+            </matrikkelnummer>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <andelSkattepliktigeInntekter>2863</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>1281</andelFradragsberettigedeKostnader>
+            <andelFormue>80958</andelFormue>
+            <andelGjeld>12351</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelSkattepliktigeInntekter>2863</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>1281</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>80958</sumAndelFormue>
+            <sumAndelGjeld>12351</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

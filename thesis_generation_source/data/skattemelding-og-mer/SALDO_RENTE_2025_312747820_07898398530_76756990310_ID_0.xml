@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>312747820</organisasjonsnummer>
+            <organisasjonsnavn>SLAKK NYTTIG GIRAFF SPAREBANK</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-3e0fb447-496c-4e48-bce9-f3babd6c61a9</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>07898398530</foedselsnummer>
+                <fornavn>ALLSLAGS</fornavn>
+                <etternavn>BADEBUKSE</etternavn>
+            </oppgaveeier>
+            <kontonummer>76756990310</kontonummer>
+            <skattekontoEgnethet>0</skattekontoEgnethet>
+            <utlaan>1099246</utlaan>
+            <innskudd>337385</innskudd>
+            <renter>
+                <opptjenteRenter>6748</opptjenteRenter>
+                <paaloepteRenter>32977</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>337385</sumInnskudd>
+            <sumUtlaan>1099246</sumUtlaan>
+            <sumOpptjenteRenter>6748</sumOpptjenteRenter>
+            <sumPaaloepteRenter>32977</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

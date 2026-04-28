@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>310539244</organisasjonsnummer>
+            <organisasjonsnavn>SORGLØS VENSTRE TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-671f93e4-31dc-461d-8685-25455c03f4b8</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>22907996410</foedselsnummer>
+                <fornavn>KLAM</fornavn>
+                <etternavn>KOKKEKNIV</etternavn>
+            </oppgaveeier>
+            <kontonummer>30019800373</kontonummer>
+            <skattekontoEgnethet>3</skattekontoEgnethet>
+            <utlaan>459971</utlaan>
+            <innskudd>292734</innskudd>
+            <renter>
+                <opptjenteRenter>5855</opptjenteRenter>
+                <paaloepteRenter>13799</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>292734</sumInnskudd>
+            <sumUtlaan>459971</sumUtlaan>
+            <sumOpptjenteRenter>5855</sumOpptjenteRenter>
+            <sumPaaloepteRenter>13799</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

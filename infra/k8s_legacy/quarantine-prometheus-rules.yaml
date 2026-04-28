@@ -1,0 +1,62 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: quarantine-prometheus-rules
+  labels:
+    app: quarantine-service
+    component: containment
+    tier: security
+    release: prometheus
+spec:
+  groups:
+    - name: quarantine.rules
+      rules:
+        - alert: QuarantineServiceDown
+          expr: up{job="quarantine-service"} == 0
+          for: 1m
+          labels:
+            severity: critical
+            service: quarantine-service
+          annotations:
+            summary: "Quarantine service is down"
+            description: "Prometheus has not been able to scrape the quarantine service for more than 1 minute."
+
+        - alert: QuarantineCasesTooHigh
+          expr: quarantine_cases_total > 25
+          for: 5m
+          labels:
+            severity: warning
+            service: quarantine-service
+          annotations:
+            summary: "High number of quarantine cases"
+            description: "The total number of quarantine cases has exceeded 25 for more than 5 minutes."
+
+        - alert: QuarantineUnderReviewBacklog
+          expr: quarantine_cases_by_state{state="UNDER_REVIEW"} > 10
+          for: 10m
+          labels:
+            severity: warning
+            service: quarantine-service
+          annotations:
+            summary: "Quarantine review backlog is growing"
+            description: "More than 10 cases are currently in UNDER_REVIEW state for over 10 minutes."
+
+        - alert: QuarantineHighSeverityCases
+          expr: quarantine_cases_by_severity{severity="HIGH"} > 5
+          for: 5m
+          labels:
+            severity: critical
+            service: quarantine-service
+          annotations:
+            summary: "High-severity quarantine cases detected"
+            description: "The number of HIGH severity quarantine cases has exceeded 5."
+
+        - alert: QuarantineEscalationEligibleCases
+          expr: quarantine_escalation_eligible_cases > 5
+          for: 5m
+          labels:
+            severity: warning
+            service: quarantine-service
+          annotations:
+            summary: "Escalation-eligible quarantine cases accumulating"
+            description: "More than 5 quarantine cases are currently marked as escalation eligible."

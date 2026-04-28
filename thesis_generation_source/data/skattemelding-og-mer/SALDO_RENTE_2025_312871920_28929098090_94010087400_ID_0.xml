@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>312871920</organisasjonsnummer>
+            <organisasjonsnavn>RETORISK OVERNATURLIG TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-74c9206a-be09-4d66-a9eb-0dde834f1920</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>28929098090</foedselsnummer>
+                <fornavn>UTHOLDEN</fornavn>
+                <etternavn>ETTERMIDDAG</etternavn>
+            </oppgaveeier>
+            <kontonummer>94010087400</kontonummer>
+            <skattekontoEgnethet>1</skattekontoEgnethet>
+            <utlaan>197106</utlaan>
+            <innskudd>219879</innskudd>
+            <renter>
+                <opptjenteRenter>4398</opptjenteRenter>
+                <paaloepteRenter>5913</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>219879</sumInnskudd>
+            <sumUtlaan>197106</sumUtlaan>
+            <sumOpptjenteRenter>4398</sumOpptjenteRenter>
+            <sumPaaloepteRenter>5913</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

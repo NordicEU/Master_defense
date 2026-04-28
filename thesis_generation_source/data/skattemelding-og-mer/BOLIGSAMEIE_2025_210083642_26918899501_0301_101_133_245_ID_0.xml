@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligsameie:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>210083642</organisasjonsnummer>
+            <organisasjonsnavn>FERSK FAMILIÆR KATT KIWI</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-ec49d287-f256-41b3-8469-dbf596ff53a2</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>26918899501</foedselsnummer>
+                <navn>MOTIVERT FAKKEL</navn>
+            </oppgaveeier>
+            <matrikkelnummer>
+                <kommunenummer>0301</kommunenummer>
+                <gaardsnummer>101</gaardsnummer>
+                <bruksnummer>133</bruksnummer>
+                <seksjonsnummer>245</seksjonsnummer>
+            </matrikkelnummer>
+            <eiertid>
+                <start>0105</start>
+                <slutt>3107</slutt>
+            </eiertid>
+            <andelSkattepliktigeInntekter>285</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>0</andelFradragsberettigedeKostnader>
+            <andelFormue>43209</andelFormue>
+            <andelGjeld>7255</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelSkattepliktigeInntekter>285</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>0</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>43209</sumAndelFormue>
+            <sumAndelGjeld>7255</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligsameie:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>211027142</organisasjonsnummer>
+            <organisasjonsnavn>SAMEIET RELEVANT UTSTRAKT LØVE</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-4631334d-9449-4590-b0e6-1d91a16e7383</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>14877298303</foedselsnummer>
+                <navn>UNYTTIG FATTIGDOM</navn>
+            </oppgaveeier>
+            <matrikkelnummer>
+                <kommunenummer>0301</kommunenummer>
+                <gaardsnummer>215</gaardsnummer>
+                <bruksnummer>479</bruksnummer>
+                <seksjonsnummer>279</seksjonsnummer>
+            </matrikkelnummer>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <andelSkattepliktigeInntekter>4546</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>1734</andelFradragsberettigedeKostnader>
+            <andelFormue>48357</andelFormue>
+            <andelGjeld>56283</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelSkattepliktigeInntekter>4546</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>1734</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>48357</sumAndelFormue>
+            <sumAndelGjeld>56283</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

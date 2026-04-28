@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>214072912</organisasjonsnummer>
+            <organisasjonsnavn>UNGT BRA LEOPARD ASA</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-5550085e-a76f-4cac-bbe9-b7e97abb2465</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>06929598146</foedselsnummer>
+                <fornavn>FORNUFTIG</fornavn>
+                <etternavn>ENTREPRENØR</etternavn>
+            </oppgaveeier>
+            <kontonummer>73472595978</kontonummer>
+            <skattekontoEgnethet>3</skattekontoEgnethet>
+            <utlaan>827626</utlaan>
+            <innskudd>652313</innskudd>
+            <renter>
+                <opptjenteRenter>13046</opptjenteRenter>
+                <paaloepteRenter>24829</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>652313</sumInnskudd>
+            <sumUtlaan>827626</sumUtlaan>
+            <sumOpptjenteRenter>13046</sumOpptjenteRenter>
+            <sumPaaloepteRenter>24829</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

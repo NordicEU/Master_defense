@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:skadeforsikring:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>313408922</organisasjonsnummer>
+            <organisasjonsnavn>SNAR KRITISK KATT SANDKASSE</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-06c09bad-1bb3-4517-84f5-cea083baccae</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>02878299690</foedselsnummer>
+                <navn>RUND ORDRE</navn>
+            </oppgaveeier>
+            <skadenummer>4043469</skadenummer>
+            <forsikringstype>tingskade</forsikringstype>
+            <annenUtbetaling>344707</annenUtbetaling>
+            <renterAvErstatning>2299</renterAvErstatning>
+            <forsikringstakernavn>RUND ORDRE</forsikringstakernavn>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumPeriodiskeUtbetalinger>0</sumPeriodiskeUtbetalinger>
+            <sumDagpengerBarneforsikring>0</sumDagpengerBarneforsikring>
+            <sumAnnenUtbetaling>344707</sumAnnenUtbetaling>
+            <sumReturAvPremie>0</sumReturAvPremie>
+            <sumRenterAvErstatning>2299</sumRenterAvErstatning>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

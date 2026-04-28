@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: quarantine-config
+  labels:
+    app: quarantine-service
+    component: containment
+    tier: security
+data:
+  QUARANTINE_RUNTIME_DIR: "/data/quarantine"
+  AUDIT_LOG_DIR: "/data/audit"
+  DEFAULT_ISOLATION_MODE: "FULL_CONTAINMENT"
+  DEFAULT_INITIAL_STATE: "ISOLATED"
+  METRICS_ENABLED: "true"
+  AUDIT_LOG_ENABLED: "true"
+  CASE_RETENTION_MODE: "persistent"

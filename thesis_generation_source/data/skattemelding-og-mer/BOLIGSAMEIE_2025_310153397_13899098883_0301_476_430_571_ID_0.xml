@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligsameie:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>310153397</organisasjonsnummer>
+            <organisasjonsnavn>SAMEIET POSITIV STORARTET LØVE</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-6d42ea76-9ca3-40fd-a745-e800e3388e9d</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>13899098883</foedselsnummer>
+                <navn>TURKIS MARENGSKAKE</navn>
+            </oppgaveeier>
+            <matrikkelnummer>
+                <kommunenummer>0301</kommunenummer>
+                <gaardsnummer>476</gaardsnummer>
+                <bruksnummer>430</bruksnummer>
+                <seksjonsnummer>571</seksjonsnummer>
+            </matrikkelnummer>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <andelSkattepliktigeInntekter>4612</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>1540</andelFradragsberettigedeKostnader>
+            <andelFormue>39058</andelFormue>
+            <andelGjeld>11219</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelSkattepliktigeInntekter>4612</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>1540</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>39058</sumAndelFormue>
+            <sumAndelGjeld>11219</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

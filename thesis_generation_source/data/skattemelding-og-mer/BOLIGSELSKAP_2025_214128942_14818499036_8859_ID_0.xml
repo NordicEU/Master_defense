@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligselskap:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>214128942</organisasjonsnummer>
+            <organisasjonsnavn>TOÅRIG DYNAMISK TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <boligselskapFormaal>bolig</boligselskapFormaal>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-3c953a25-a7a0-415b-8c40-d7a02b56b52e</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>14818499036</foedselsnummer>
+                <navn>DYP ISBJØRN</navn>
+            </oppgaveeier>
+            <boenhet>
+                <aksjeboenhetsnummer>8859</aksjeboenhetsnummer>
+                <kommunenummer>0301</kommunenummer>
+                <bolignummer>H9640</bolignummer>
+                <gatenavnOgHusnummer>Storgata 69</gatenavnOgHusnummer>
+            </boenhet>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <eierandel>
+                <eierandelTeller>1</eierandelTeller>
+                <eierandelNevner>2</eierandelNevner>
+            </eierandel>
+            <bruksoverlatt>false</bruksoverlatt>
+            <andelLikningsverdiBoenhet>0</andelLikningsverdiBoenhet>
+            <andelSkattepliktigeInntekter>394</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>8761</andelFradragsberettigedeKostnader>
+            <andelFormue>14147</andelFormue>
+            <andelGjeld>484010</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelLikningsverdiBoenhet>0</sumAndelLikningsverdiBoenhet>
+            <sumAndelSkattepliktigeInntekter>394</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>8761</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>14147</sumAndelFormue>
+            <sumAndelGjeld>484010</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

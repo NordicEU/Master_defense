@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>213282182</organisasjonsnummer>
+            <organisasjonsnavn>SEIN MOTSTANDSDYKTIG HUND DA</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-b174f3a1-2730-4212-ae3e-b44189e52b5b</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>17887797420</foedselsnummer>
+                <fornavn>OPERATIV</fornavn>
+                <etternavn>SOLSIKKE</etternavn>
+            </oppgaveeier>
+            <kontonummer>74071655249</kontonummer>
+            <skattekontoEgnethet>2</skattekontoEgnethet>
+            <utlaan>797603</utlaan>
+            <innskudd>239292</innskudd>
+            <renter>
+                <opptjenteRenter>4786</opptjenteRenter>
+                <paaloepteRenter>23928</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>239292</sumInnskudd>
+            <sumUtlaan>797603</sumUtlaan>
+            <sumOpptjenteRenter>4786</sumOpptjenteRenter>
+            <sumPaaloepteRenter>23928</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

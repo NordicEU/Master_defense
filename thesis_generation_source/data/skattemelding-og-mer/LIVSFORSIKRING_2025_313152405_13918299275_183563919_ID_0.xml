@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:livsforsikring:v1">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>313152405</organisasjonsnummer>
+            <organisasjonsnavn>NY UPERSONLIG APE</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-33fe3c66-795e-47a7-b114-2a29b88fed74</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>13918299275</foedselsnummer>
+                <fornavn>ÅPEN</fornavn>
+                <etternavn>POSE</etternavn>
+            </oppgaveeier>
+            <forsikringsnummer>183563919</forsikringsnummer>
+            <livdel>
+                <forsikringstype>individuelleLivrenter</forsikringstype>
+                <gjenkjoepsverdi>3965025</gjenkjoepsverdi>
+                <skattepliktigAvkastning>220454</skattepliktigAvkastning>
+            </livdel>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <livdelSumGjenkjoepsverdi>3965025</livdelSumGjenkjoepsverdi>
+            <livdelSumSkattepliktigAvkastning>220454</livdelSumSkattepliktigAvkastning>
+            <utbetalingSumSkattepliktigeBeloep>0</utbetalingSumSkattepliktigeBeloep>
+            <utbetalingSumSkattefrieBeloep>0</utbetalingSumSkattefrieBeloep>
+            <utbetalingSumFradragsberettigetTap>0</utbetalingSumFradragsberettigetTap>
+            <fortsettelsesforsikringSumInnestaaendePaaPremiefond>0</fortsettelsesforsikringSumInnestaaendePaaPremiefond>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

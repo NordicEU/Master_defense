@@ -1,0 +1,16 @@
+resources:
+  - namespace.yaml
+  - configmap.yaml
+  - ollama.yaml
+  - analysis.yaml
+  - decision.yaml
+  - gateway.yaml
+  - business.yaml
+  - minefield.yaml
+  - honeypot.yaml
+  - deceiver.yaml
+  - quarantine.yaml
+  - input.yaml
+  - input-ingress.yaml
+  - ops.yaml
+  - ops-ingress.yaml

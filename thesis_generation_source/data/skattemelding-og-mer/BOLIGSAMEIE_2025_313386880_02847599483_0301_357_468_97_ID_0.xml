@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligsameie:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>313386880</organisasjonsnummer>
+            <organisasjonsnavn>SKJØNN LEGITIM LØVE SAMEIE</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-092bb561-2bed-438f-8ab2-521e82d890dc</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>02847599483</foedselsnummer>
+                <navn>NETT ALDRING</navn>
+            </oppgaveeier>
+            <matrikkelnummer>
+                <kommunenummer>0301</kommunenummer>
+                <gaardsnummer>357</gaardsnummer>
+                <bruksnummer>468</bruksnummer>
+                <seksjonsnummer>97</seksjonsnummer>
+            </matrikkelnummer>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <andelSkattepliktigeInntekter>4416</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>1217</andelFradragsberettigedeKostnader>
+            <andelFormue>34630</andelFormue>
+            <andelGjeld>11144</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelSkattepliktigeInntekter>4416</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>1217</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>34630</sumAndelFormue>
+            <sumAndelGjeld>11144</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

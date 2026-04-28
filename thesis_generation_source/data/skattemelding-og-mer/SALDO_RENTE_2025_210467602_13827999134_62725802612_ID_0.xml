@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>210467602</organisasjonsnummer>
+            <organisasjonsnavn>FLINK UTØRST TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-66c15afc-931f-4bd1-91fb-a8bfa0640003</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>13827999134</foedselsnummer>
+                <fornavn>SMAL</fornavn>
+                <etternavn>DIESEL</etternavn>
+            </oppgaveeier>
+            <kontonummer>62725802612</kontonummer>
+            <skattekontoEgnethet>2</skattekontoEgnethet>
+            <utlaan>115601</utlaan>
+            <innskudd>539708</innskudd>
+            <renter>
+                <opptjenteRenter>10794</opptjenteRenter>
+                <paaloepteRenter>3468</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>539708</sumInnskudd>
+            <sumUtlaan>115601</sumUtlaan>
+            <sumOpptjenteRenter>10794</sumOpptjenteRenter>
+            <sumPaaloepteRenter>3468</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:skadeforsikring:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>314243943</organisasjonsnummer>
+            <organisasjonsnavn>MINIMALISTISK KLARTENKT TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-7b7e2df9-0aa2-4099-8673-78fe44df20d1</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>09817798362</foedselsnummer>
+                <navn>TANKEFULL EDELSTEIN</navn>
+            </oppgaveeier>
+            <skadenummer>2618371</skadenummer>
+            <forsikringstype>tingskade</forsikringstype>
+            <annenUtbetaling>257698</annenUtbetaling>
+            <renterAvErstatning>4117</renterAvErstatning>
+            <forsikringstakernavn>TANKEFULL EDELSTEIN</forsikringstakernavn>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumPeriodiskeUtbetalinger>0</sumPeriodiskeUtbetalinger>
+            <sumDagpengerBarneforsikring>0</sumDagpengerBarneforsikring>
+            <sumAnnenUtbetaling>257698</sumAnnenUtbetaling>
+            <sumReturAvPremie>0</sumReturAvPremie>
+            <sumRenterAvErstatning>4117</sumRenterAvErstatning>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

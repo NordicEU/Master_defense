@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligselskap:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>312200325</organisasjonsnummer>
+            <organisasjonsnavn>FORNUFTIG LYKKELIG TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <boligselskapFormaal>bolig</boligselskapFormaal>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-2bc6b329-8004-4621-ab24-6dedff533dd9</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>20879096937</foedselsnummer>
+                <navn>STERK KUNNGJØRING</navn>
+            </oppgaveeier>
+            <boenhet>
+                <aksjeboenhetsnummer>2634</aksjeboenhetsnummer>
+                <kommunenummer>0301</kommunenummer>
+                <bolignummer>H1581</bolignummer>
+                <gatenavnOgHusnummer>Storgata 75</gatenavnOgHusnummer>
+            </boenhet>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <eierandel>
+                <eierandelTeller>1</eierandelTeller>
+                <eierandelNevner>2</eierandelNevner>
+            </eierandel>
+            <bruksoverlatt>false</bruksoverlatt>
+            <andelLikningsverdiBoenhet>0</andelLikningsverdiBoenhet>
+            <andelSkattepliktigeInntekter>1669</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>7002</andelFradragsberettigedeKostnader>
+            <andelFormue>15523</andelFormue>
+            <andelGjeld>678971</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelLikningsverdiBoenhet>0</sumAndelLikningsverdiBoenhet>
+            <sumAndelSkattepliktigeInntekter>1669</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>7002</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>15523</sumAndelFormue>
+            <sumAndelGjeld>678971</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

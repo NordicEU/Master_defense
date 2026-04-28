@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:aksjesparekonto:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>310748641</organisasjonsnummer>
+            <organisasjonsnavn>RISIKABEL KONVENSJONELL TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-409fc3d4-15e3-4592-bf96-0ee7bb632814</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>24928898659</foedselsnummer>
+                <fornavn>SAKTE</fornavn>
+                <etternavn>HAVHEST</etternavn>
+            </oppgaveeier>
+            <aksjesparekonto>
+                <kontonummer>18650877000</kontonummer>
+                <kontonummertype>Annen</kontonummertype>
+                <inngangsverdi>59444.44</inngangsverdi>
+                <ubenyttetSkjerming>0</ubenyttetSkjerming>
+                <anvendtSkjerming>0</anvendtSkjerming>
+                <innskudd>59444.44</innskudd>
+                <uttak>0</uttak>
+                <skattepliktigGevinstTap>-29329.00</skattepliktigGevinstTap>
+                <formuesverdiKontantdel>0</formuesverdiKontantdel>
+                <avsluttet>true</avsluttet>
+            </aksjesparekonto>
+            <produkt>
+                <finansproduktIsin>NO2129965480</finansproduktIsin>
+                <finansproduktnavn>Tech RST</finansproduktnavn>
+                <antall>0</antall>
+                <formuesverdi>0</formuesverdi>
+            </produkt>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInngangsverdi>59444.44</sumInngangsverdi>
+            <sumInnskudd>59444.44</sumInnskudd>
+            <sumUttak>0</sumUttak>
+            <sumUbenyttetSkjerming>0</sumUbenyttetSkjerming>
+            <sumAnvendtSkjerming>0</sumAnvendtSkjerming>
+            <sumSkattepliktigGevinstTap>-29329.00</sumSkattepliktigGevinstTap>
+            <sumFormuesverdiKontantdel>0</sumFormuesverdiKontantdel>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

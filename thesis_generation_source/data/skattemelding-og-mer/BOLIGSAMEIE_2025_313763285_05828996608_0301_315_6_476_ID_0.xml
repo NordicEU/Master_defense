@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligsameie:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>313763285</organisasjonsnummer>
+            <organisasjonsnavn>HURTIG GENIERKLÆRT APE</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-3578fd25-9206-4a4e-ae87-f7174e7c8c5d</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>05828996608</foedselsnummer>
+                <navn>ENKEL MOR</navn>
+            </oppgaveeier>
+            <matrikkelnummer>
+                <kommunenummer>0301</kommunenummer>
+                <gaardsnummer>315</gaardsnummer>
+                <bruksnummer>6</bruksnummer>
+                <seksjonsnummer>476</seksjonsnummer>
+            </matrikkelnummer>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <andelSkattepliktigeInntekter>4989</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>787</andelFradragsberettigedeKostnader>
+            <andelFormue>51652</andelFormue>
+            <andelGjeld>37038</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelSkattepliktigeInntekter>4989</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>787</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>51652</sumAndelFormue>
+            <sumAndelGjeld>37038</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

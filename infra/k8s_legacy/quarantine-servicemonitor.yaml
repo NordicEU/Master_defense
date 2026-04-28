@@ -1,0 +1,20 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: quarantine-service-monitor
+  labels:
+    app: quarantine-service
+    component: containment
+    tier: security
+    release: prometheus
+spec:
+  selector:
+    matchLabels:
+      app: quarantine-service
+  endpoints:
+    - port: http
+      path: /metrics
+      interval: 15s
+      scrapeTimeout: 5s
+  namespaceSelector:
+    any: true

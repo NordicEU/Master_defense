@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligsameie:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>312925508</organisasjonsnummer>
+            <organisasjonsnavn>DOBBEL FORSTANDIG TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-c749b333-cb15-4685-89ba-6524c4c87971</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>10908599301</foedselsnummer>
+                <navn>TRADISJONSBUNDEN TROMMIS</navn>
+            </oppgaveeier>
+            <matrikkelnummer>
+                <kommunenummer>0301</kommunenummer>
+                <gaardsnummer>204</gaardsnummer>
+                <bruksnummer>343</bruksnummer>
+                <seksjonsnummer>549</seksjonsnummer>
+            </matrikkelnummer>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <andelSkattepliktigeInntekter>2701</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>1617</andelFradragsberettigedeKostnader>
+            <andelFormue>60096</andelFormue>
+            <andelGjeld>68174</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelSkattepliktigeInntekter>2701</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>1617</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>60096</sumAndelFormue>
+            <sumAndelGjeld>68174</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

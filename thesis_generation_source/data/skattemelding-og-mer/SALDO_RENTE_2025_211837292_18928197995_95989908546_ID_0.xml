@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>211837292</organisasjonsnummer>
+            <organisasjonsnavn>UTMERKET NØYTRAL FJELLREV</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-a9cccc39-5eea-4b2e-b422-7d165235f45c</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>18928197995</foedselsnummer>
+                <fornavn>OVERMODIG</fornavn>
+                <etternavn>VESKE</etternavn>
+            </oppgaveeier>
+            <kontonummer>95989908546</kontonummer>
+            <skattekontoEgnethet>2</skattekontoEgnethet>
+            <utlaan>1164393</utlaan>
+            <innskudd>411295</innskudd>
+            <renter>
+                <opptjenteRenter>8226</opptjenteRenter>
+                <paaloepteRenter>34932</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>411295</sumInnskudd>
+            <sumUtlaan>1164393</sumUtlaan>
+            <sumOpptjenteRenter>8226</sumOpptjenteRenter>
+            <sumPaaloepteRenter>34932</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

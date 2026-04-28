@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>213683322</organisasjonsnummer>
+            <organisasjonsnavn>RETT SKY TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-71e765a9-deb1-46ab-8432-b73fa7885431</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>09858497776</foedselsnummer>
+                <fornavn>UVANLIG</fornavn>
+                <etternavn>AVDELING</etternavn>
+            </oppgaveeier>
+            <kontonummer>31959123309</kontonummer>
+            <skattekontoEgnethet>2</skattekontoEgnethet>
+            <utlaan>1042554</utlaan>
+            <innskudd>348938</innskudd>
+            <renter>
+                <opptjenteRenter>6979</opptjenteRenter>
+                <paaloepteRenter>31277</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>348938</sumInnskudd>
+            <sumUtlaan>1042554</sumUtlaan>
+            <sumOpptjenteRenter>6979</sumOpptjenteRenter>
+            <sumPaaloepteRenter>31277</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

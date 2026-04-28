@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<skatteinfoDokument skjemaversjon="v3_0" xmlns="urn:ske:fastsetting:skatteinfo:dokument:v3">
+    <header>
+        <dokumentidentifikator>eecb7b1f-fedd-4937-ada8-98bea1087693</dokumentidentifikator>
+        <revisjonsnummer>1</revisjonsnummer>
+        <dokumentnavn>OPPLYSNINGER_SKATTESUBJEKT_2025:2025:3000881377_ID_0</dokumentnavn>
+        <dokumenttype>OPPLYSNINGER_SKATTESUBJEKT_2025</dokumenttype>
+        <dokumenttilstand>OPPRETTET</dokumenttilstand>
+        <gyldig>true</gyldig>
+        <gjelderInntektsaar>2025</gjelderInntektsaar>
+        <gjelderPeriode>2025</gjelderPeriode>
+        <gjelderPart>
+            <partsnummer>3000881377</partsnummer>
+            <identifiseringstype>PARTSNUMMER</identifiseringstype>
+        </gjelderPart>
+        <opphavspart>
+            <partsnummer>3000881377</partsnummer>
+        </opphavspart>
+        <kildereferanse>
+            <kildesystem>{TESTINNSENDING}</kildesystem>
+            <referanse>e23fced8-dc8f-47d3-b714-2ca11792d674</referanse>
+            <tidspunkt>2026-02-27T11:34:44.467+01:00</tidspunkt>
+        </kildereferanse>
+    </header>
+    <data>
+        <metadata>
+            <format>urn:no:skatteetaten:fastsetting:opplysningeromskattesubjekt:v9</format>
+            <bytes>831</bytes>
+            <mimeType>application/xml</mimeType>
+            <sha1>O4AZLnc/ALMeU6nIAUR93NVhKyE=</sha1>
+        </metadata>
+        <content>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8b3BwbHlzbmluZ2VyT21Ta2F0dGVzdWJqZWt0IHhtbG5zPSJ1cm46bm86c2thdHRlZXRhdGVuOmZhc3RzZXR0aW5nOm9wcGx5c25pbmdlcm9tc2thdHRlc3ViamVrdDp2OSI+CiAgICA8cGVyc29ubGlnU2thdHRlc3ViamVrdD4KICAgICAgICA8aWRlbnRpZmlrYXRvcj4KICAgICAgICAgICAgPGZvZWRzZWxzbnVtbWVyPjI5ODE5MTk5MDY4PC9mb2Vkc2Vsc251bW1lcj4KICAgICAgICA8L2lkZW50aWZpa2F0b3I+CiAgICAgICAgPHZ1cmRlcmluZ0F2U2thdHRlbWVzc2lnQm9zYXR0PgogICAgICAgICAgICA8c2thdHRlbWVzc2lnQm9zYXR0PnRydWU8L3NrYXR0ZW1lc3NpZ0Jvc2F0dD4KICAgICAgICA8L3Z1cmRlcmluZ0F2U2thdHRlbWVzc2lnQm9zYXR0PgogICAgPC9wZXJzb25saWdTa2F0dGVzdWJqZWt0PgogICAgPHBhcnRzbnVtbWVyPjMwMDA4ODEzNzc8L3BhcnRzbnVtbWVyPgogICAgPGlubnRla3RzYWFyPjIwMjU8L2lubnRla3RzYWFyPgogICAgPGJlaGFuZGxlbmRlT3JnYW5pc2Fzam9uc2VuaGV0PnJlZ2lvbk9lc3Q8L2JlaGFuZGxlbmRlT3JnYW5pc2Fzam9uc2VuaGV0PgogICAgPHNrYXR0ZXJlZ25za2Fwc2tvbW11bmU+MDMwMTwvc2thdHRlcmVnbnNrYXBza29tbXVuZT4KICAgIDxpbmZvcm1hc2pvbnNraWxkZT4KICAgICAgICA8a2lsZGU+RFNTPC9raWxkZT4KICAgICAgICA8cmVmZXJhbnNlPlRlc3RkYXRhZ2VuZXJhdG9yPC9yZWZlcmFuc2U+CiAgICA8L2luZm9ybWFzam9uc2tpbGRlPgo8L29wcGx5c25pbmdlck9tU2thdHRlc3ViamVrdD4K</content>
+    </data>
+</skatteinfoDokument>

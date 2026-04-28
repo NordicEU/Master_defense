@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>213582232</organisasjonsnummer>
+            <organisasjonsnavn>ALTETENDE SJELDEN TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-581536ce-845e-487e-8173-6585708b5d3c</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>25869598332</foedselsnummer>
+                <fornavn>FANTASILØS</fornavn>
+                <etternavn>VEPS</etternavn>
+            </oppgaveeier>
+            <kontonummer>24377885550</kontonummer>
+            <skattekontoEgnethet>3</skattekontoEgnethet>
+            <utlaan>750044</utlaan>
+            <innskudd>635818</innskudd>
+            <renter>
+                <opptjenteRenter>12716</opptjenteRenter>
+                <paaloepteRenter>22501</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>635818</sumInnskudd>
+            <sumUtlaan>750044</sumUtlaan>
+            <sumOpptjenteRenter>12716</sumOpptjenteRenter>
+            <sumPaaloepteRenter>22501</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>310072842</organisasjonsnummer>
+            <organisasjonsnavn>GØYAL KVART GIRAFF SPAREBANK</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-9be1ce60-875d-41d2-9f70-321083119fc6</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>29858597496</foedselsnummer>
+                <fornavn>ALGERISK</fornavn>
+                <etternavn>KORGSTOL</etternavn>
+            </oppgaveeier>
+            <kontonummer>28667976253</kontonummer>
+            <skattekontoEgnethet>3</skattekontoEgnethet>
+            <utlaan>76930</utlaan>
+            <innskudd>140756</innskudd>
+            <renter>
+                <opptjenteRenter>2815</opptjenteRenter>
+                <paaloepteRenter>2308</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>140756</sumInnskudd>
+            <sumUtlaan>76930</sumUtlaan>
+            <sumOpptjenteRenter>2815</sumOpptjenteRenter>
+            <sumPaaloepteRenter>2308</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

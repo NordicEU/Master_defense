@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>210865152</organisasjonsnummer>
+            <organisasjonsnavn>FORNEM HÅNDLAGET TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-434fb8b7-d0f8-4063-9947-54d9f0938200</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>13889498271</foedselsnummer>
+                <fornavn>KLAR</fornavn>
+                <etternavn>HISTORIE</etternavn>
+            </oppgaveeier>
+            <kontonummer>30329227983</kontonummer>
+            <skattekontoEgnethet>3</skattekontoEgnethet>
+            <utlaan>198246</utlaan>
+            <innskudd>576464</innskudd>
+            <renter>
+                <opptjenteRenter>11529</opptjenteRenter>
+                <paaloepteRenter>5947</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>576464</sumInnskudd>
+            <sumUtlaan>198246</sumUtlaan>
+            <sumOpptjenteRenter>11529</sumOpptjenteRenter>
+            <sumPaaloepteRenter>5947</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

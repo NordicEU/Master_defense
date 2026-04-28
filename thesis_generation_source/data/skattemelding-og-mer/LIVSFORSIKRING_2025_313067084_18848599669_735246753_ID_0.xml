@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:livsforsikring:v1">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>313067084</organisasjonsnummer>
+            <organisasjonsnavn>METT UTMERKET TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-0bd273b7-f841-441a-8104-a1d6b5ad28c4</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>18848599669</foedselsnummer>
+                <fornavn>AUTONOM</fornavn>
+                <etternavn>FORDYPNING</etternavn>
+            </oppgaveeier>
+            <forsikringsnummer>735246753</forsikringsnummer>
+            <livdel>
+                <forsikringstype>kapitalforsikringMedSparing</forsikringstype>
+                <gjenkjoepsverdi>4465238</gjenkjoepsverdi>
+                <skattepliktigAvkastning>297571</skattepliktigAvkastning>
+            </livdel>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <livdelSumGjenkjoepsverdi>4465238</livdelSumGjenkjoepsverdi>
+            <livdelSumSkattepliktigAvkastning>297571</livdelSumSkattepliktigAvkastning>
+            <utbetalingSumSkattepliktigeBeloep>0</utbetalingSumSkattepliktigeBeloep>
+            <utbetalingSumSkattefrieBeloep>0</utbetalingSumSkattefrieBeloep>
+            <utbetalingSumFradragsberettigetTap>0</utbetalingSumFradragsberettigetTap>
+            <fortsettelsesforsikringSumInnestaaendePaaPremiefond>0</fortsettelsesforsikringSumInnestaaendePaaPremiefond>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>212866652</organisasjonsnummer>
+            <organisasjonsnavn>TRÅDLØS KONKURRANSEDYKTIG KATT KONSEKVENS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-868c6b06-67fd-460e-9487-c0e482623ad9</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>05828996608</foedselsnummer>
+                <fornavn>ENKEL</fornavn>
+                <etternavn>MOR</etternavn>
+            </oppgaveeier>
+            <kontonummer>15466887045</kontonummer>
+            <skattekontoEgnethet>1</skattekontoEgnethet>
+            <utlaan>1251922</utlaan>
+            <innskudd>55747</innskudd>
+            <renter>
+                <opptjenteRenter>1115</opptjenteRenter>
+                <paaloepteRenter>37558</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>55747</sumInnskudd>
+            <sumUtlaan>1251922</sumUtlaan>
+            <sumOpptjenteRenter>1115</sumOpptjenteRenter>
+            <sumPaaloepteRenter>37558</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

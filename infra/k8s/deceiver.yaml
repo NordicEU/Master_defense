@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deceiver-service
+  namespace: defense
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: deceiver-service
+  template:
+    metadata:
+      labels:
+        app: deceiver-service
+    spec:
+      containers:
+        - name: deceiver-service
+          image: deceiver-service:local
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8007
+          envFrom:
+            - configMapRef:
+                name: defense-config
+          volumeMounts:
+            - name: quarantine-storage
+              mountPath: /app/runtime
+      volumes:
+        - name: quarantine-storage
+          persistentVolumeClaim:
+            claimName: quarantine-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: deceiver-service
+  namespace: defense
+spec:
+  selector:
+    app: deceiver-service
+  ports:
+    - port: 8007
+      targetPort: 8007

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>211077662</organisasjonsnummer>
+            <organisasjonsnavn>SINDIG POSSESSIV SKILPADDE BA</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-bcf0dbb8-891a-43f6-a6ca-ba193d087590</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>10848798148</foedselsnummer>
+                <fornavn>REAL</fornavn>
+                <etternavn>FREDAG</etternavn>
+            </oppgaveeier>
+            <kontonummer>82091862936</kontonummer>
+            <skattekontoEgnethet>0</skattekontoEgnethet>
+            <utlaan>1158693</utlaan>
+            <innskudd>140291</innskudd>
+            <renter>
+                <opptjenteRenter>2806</opptjenteRenter>
+                <paaloepteRenter>34761</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>140291</sumInnskudd>
+            <sumUtlaan>1158693</sumUtlaan>
+            <sumOpptjenteRenter>2806</sumOpptjenteRenter>
+            <sumPaaloepteRenter>34761</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

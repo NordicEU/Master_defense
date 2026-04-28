@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>213613782</organisasjonsnummer>
+            <organisasjonsnavn>NYTTIG LIVLIG TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-40c9790e-f42f-4064-a5f7-d76f48b95f24</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>11898497471</foedselsnummer>
+                <fornavn>OPPRETTHOLDENDE</fornavn>
+                <etternavn>SKO</etternavn>
+            </oppgaveeier>
+            <kontonummer>11424568335</kontonummer>
+            <skattekontoEgnethet>3</skattekontoEgnethet>
+            <utlaan>963288</utlaan>
+            <innskudd>314879</innskudd>
+            <renter>
+                <opptjenteRenter>6298</opptjenteRenter>
+                <paaloepteRenter>28899</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>314879</sumInnskudd>
+            <sumUtlaan>963288</sumUtlaan>
+            <sumOpptjenteRenter>6298</sumOpptjenteRenter>
+            <sumPaaloepteRenter>28899</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

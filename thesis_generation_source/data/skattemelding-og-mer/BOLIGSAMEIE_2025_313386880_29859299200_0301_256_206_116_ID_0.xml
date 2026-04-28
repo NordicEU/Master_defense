@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligsameie:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>313386880</organisasjonsnummer>
+            <organisasjonsnavn>SKJØNN LEGITIM LØVE SAMEIE</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-a116fc9b-8339-41e9-9dbe-f160f55db995</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>29859299200</foedselsnummer>
+                <navn>INTELLIGENT HOBBY</navn>
+            </oppgaveeier>
+            <matrikkelnummer>
+                <kommunenummer>0301</kommunenummer>
+                <gaardsnummer>256</gaardsnummer>
+                <bruksnummer>206</bruksnummer>
+                <seksjonsnummer>116</seksjonsnummer>
+            </matrikkelnummer>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <andelSkattepliktigeInntekter>4407</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>1301</andelFradragsberettigedeKostnader>
+            <andelFormue>79223</andelFormue>
+            <andelGjeld>25931</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelSkattepliktigeInntekter>4407</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>1301</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>79223</sumAndelFormue>
+            <sumAndelGjeld>25931</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>214517612</organisasjonsnummer>
+            <organisasjonsnavn>VOKSENDE ALTERNATIV TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-03eec7c3-fb91-41d5-8213-852796bdfdde</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>09817798362</foedselsnummer>
+                <fornavn>TANKEFULL</fornavn>
+                <etternavn>EDELSTEIN</etternavn>
+            </oppgaveeier>
+            <kontonummer>58918307913</kontonummer>
+            <skattekontoEgnethet>3</skattekontoEgnethet>
+            <utlaan>1113655</utlaan>
+            <innskudd>536880</innskudd>
+            <renter>
+                <opptjenteRenter>10738</opptjenteRenter>
+                <paaloepteRenter>33410</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>536880</sumInnskudd>
+            <sumUtlaan>1113655</sumUtlaan>
+            <sumOpptjenteRenter>10738</sumOpptjenteRenter>
+            <sumPaaloepteRenter>33410</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

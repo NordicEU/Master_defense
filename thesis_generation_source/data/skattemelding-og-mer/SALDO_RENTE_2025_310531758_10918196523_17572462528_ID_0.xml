@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>310531758</organisasjonsnummer>
+            <organisasjonsnavn>BLID NESNØDD HEST BORETTSLAG</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-f39c1794-549a-4c09-9ef8-1e4a1f6d270f</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>10918196523</foedselsnummer>
+                <fornavn>OPPKLARENDE</fornavn>
+                <etternavn>ANDAKT</etternavn>
+            </oppgaveeier>
+            <kontonummer>17572462528</kontonummer>
+            <skattekontoEgnethet>2</skattekontoEgnethet>
+            <utlaan>355446</utlaan>
+            <innskudd>537275</innskudd>
+            <renter>
+                <opptjenteRenter>10746</opptjenteRenter>
+                <paaloepteRenter>10663</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>537275</sumInnskudd>
+            <sumUtlaan>355446</sumUtlaan>
+            <sumOpptjenteRenter>10746</sumOpptjenteRenter>
+            <sumPaaloepteRenter>10663</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

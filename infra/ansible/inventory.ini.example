@@ -1,0 +1,2 @@
+[containment_admin]
+REPLACE_WITH_IP ansible_user=ubuntu

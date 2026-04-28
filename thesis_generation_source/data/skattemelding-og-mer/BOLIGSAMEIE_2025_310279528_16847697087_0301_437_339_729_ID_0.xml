@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligsameie:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>310279528</organisasjonsnummer>
+            <organisasjonsnavn>MUNTER HALV TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-9190939d-6011-498a-be26-81b4d3621bf0</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>16847697087</foedselsnummer>
+                <navn>SAMTIDIG MØLL</navn>
+            </oppgaveeier>
+            <matrikkelnummer>
+                <kommunenummer>0301</kommunenummer>
+                <gaardsnummer>437</gaardsnummer>
+                <bruksnummer>339</bruksnummer>
+                <seksjonsnummer>729</seksjonsnummer>
+            </matrikkelnummer>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <andelSkattepliktigeInntekter>2684</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>1554</andelFradragsberettigedeKostnader>
+            <andelFormue>84545</andelFormue>
+            <andelGjeld>99807</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelSkattepliktigeInntekter>2684</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>1554</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>84545</sumAndelFormue>
+            <sumAndelGjeld>99807</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

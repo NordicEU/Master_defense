@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligsameie:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>310702900</organisasjonsnummer>
+            <organisasjonsnavn>FRUKTBAR TRADISJONSBUNDEN TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-f533c0f0-ca8a-43a6-9515-c5fe23bc0304</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>07869498186</foedselsnummer>
+                <navn>KJENT ÅRSTID</navn>
+            </oppgaveeier>
+            <matrikkelnummer>
+                <kommunenummer>0301</kommunenummer>
+                <gaardsnummer>240</gaardsnummer>
+                <bruksnummer>115</bruksnummer>
+                <seksjonsnummer>216</seksjonsnummer>
+            </matrikkelnummer>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <andelSkattepliktigeInntekter>2267</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>665</andelFradragsberettigedeKostnader>
+            <andelFormue>64258</andelFormue>
+            <andelGjeld>43010</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelSkattepliktigeInntekter>2267</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>665</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>64258</sumAndelFormue>
+            <sumAndelGjeld>43010</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

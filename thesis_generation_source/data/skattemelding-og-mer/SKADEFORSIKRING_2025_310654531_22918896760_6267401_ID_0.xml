@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:skadeforsikring:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>310654531</organisasjonsnummer>
+            <organisasjonsnavn>NYSGJERRIG GLOVARM TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-081a779c-8b9a-42fe-805d-740094ff9dcd</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>22918896760</foedselsnummer>
+                <navn>BESTEMT RYNKE</navn>
+            </oppgaveeier>
+            <skadenummer>6267401</skadenummer>
+            <forsikringstype>tingskade</forsikringstype>
+            <annenUtbetaling>448421</annenUtbetaling>
+            <renterAvErstatning>4351</renterAvErstatning>
+            <forsikringstakernavn>BESTEMT RYNKE</forsikringstakernavn>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumPeriodiskeUtbetalinger>0</sumPeriodiskeUtbetalinger>
+            <sumDagpengerBarneforsikring>0</sumDagpengerBarneforsikring>
+            <sumAnnenUtbetaling>448421</sumAnnenUtbetaling>
+            <sumReturAvPremie>0</sumReturAvPremie>
+            <sumRenterAvErstatning>4351</sumRenterAvErstatning>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

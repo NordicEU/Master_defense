@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>212229822</organisasjonsnummer>
+            <organisasjonsnavn>KRY BETYDELIG SKILPADDE BA</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-18b0d9f6-dbda-4e27-8306-985c269dd161</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>23899198956</foedselsnummer>
+                <fornavn>BESKJEDEN</fornavn>
+                <etternavn>TROST</etternavn>
+            </oppgaveeier>
+            <kontonummer>87680342928</kontonummer>
+            <skattekontoEgnethet>1</skattekontoEgnethet>
+            <utlaan>1442047</utlaan>
+            <innskudd>538917</innskudd>
+            <renter>
+                <opptjenteRenter>10778</opptjenteRenter>
+                <paaloepteRenter>43261</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>538917</sumInnskudd>
+            <sumUtlaan>1442047</sumUtlaan>
+            <sumOpptjenteRenter>10778</sumOpptjenteRenter>
+            <sumPaaloepteRenter>43261</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

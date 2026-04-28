@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:skadeforsikring:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>313006166</organisasjonsnummer>
+            <organisasjonsnavn>USELVSTENDIG KONTROLLERT LEOPARD ASA</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-988b742b-22a9-4b91-925d-75baf0c01bd0</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>15818397558</foedselsnummer>
+                <navn>OPERATIV FOTBALL</navn>
+            </oppgaveeier>
+            <skadenummer>7360728</skadenummer>
+            <forsikringstype>tingskade</forsikringstype>
+            <annenUtbetaling>249889</annenUtbetaling>
+            <renterAvErstatning>3257</renterAvErstatning>
+            <forsikringstakernavn>OPERATIV FOTBALL</forsikringstakernavn>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumPeriodiskeUtbetalinger>0</sumPeriodiskeUtbetalinger>
+            <sumDagpengerBarneforsikring>0</sumDagpengerBarneforsikring>
+            <sumAnnenUtbetaling>249889</sumAnnenUtbetaling>
+            <sumReturAvPremie>0</sumReturAvPremie>
+            <sumRenterAvErstatning>3257</sumRenterAvErstatning>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

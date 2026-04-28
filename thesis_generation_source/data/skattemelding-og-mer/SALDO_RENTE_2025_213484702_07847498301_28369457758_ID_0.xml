@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>213484702</organisasjonsnummer>
+            <organisasjonsnavn>MANGE PERSONLIG ISBJØRN SA</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-51a87623-f715-4e1a-be7f-74764b34d067</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>07847498301</foedselsnummer>
+                <fornavn>SAMTIDIG</fornavn>
+                <etternavn>TAKRAS</etternavn>
+            </oppgaveeier>
+            <kontonummer>28369457758</kontonummer>
+            <skattekontoEgnethet>3</skattekontoEgnethet>
+            <utlaan>773261</utlaan>
+            <innskudd>536650</innskudd>
+            <renter>
+                <opptjenteRenter>10733</opptjenteRenter>
+                <paaloepteRenter>23198</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>536650</sumInnskudd>
+            <sumUtlaan>773261</sumUtlaan>
+            <sumOpptjenteRenter>10733</sumOpptjenteRenter>
+            <sumPaaloepteRenter>23198</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

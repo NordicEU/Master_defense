@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:aksjesparekonto:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>311797271</organisasjonsnummer>
+            <organisasjonsnavn>FLAT FATTIG TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-6709381f-80cb-4511-b3b9-0826e2ad2bef</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>20848398064</foedselsnummer>
+                <fornavn>EKSTRA</fornavn>
+                <etternavn>LAKRIS</etternavn>
+            </oppgaveeier>
+            <aksjesparekonto>
+                <kontonummer>95343640545</kontonummer>
+                <kontonummertype>Annen</kontonummertype>
+                <inngangsverdi>91289.38</inngangsverdi>
+                <ubenyttetSkjerming>0</ubenyttetSkjerming>
+                <anvendtSkjerming>0</anvendtSkjerming>
+                <innskudd>91289.38</innskudd>
+                <uttak>0</uttak>
+                <skattepliktigGevinstTap>-183568.00</skattepliktigGevinstTap>
+                <formuesverdiKontantdel>0</formuesverdiKontantdel>
+                <avsluttet>true</avsluttet>
+            </aksjesparekonto>
+            <produkt>
+                <finansproduktIsin>NO1190357973</finansproduktIsin>
+                <finansproduktnavn>Tech RST</finansproduktnavn>
+                <antall>0</antall>
+                <formuesverdi>0</formuesverdi>
+            </produkt>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInngangsverdi>91289.38</sumInngangsverdi>
+            <sumInnskudd>91289.38</sumInnskudd>
+            <sumUttak>0</sumUttak>
+            <sumUbenyttetSkjerming>0</sumUbenyttetSkjerming>
+            <sumAnvendtSkjerming>0</sumAnvendtSkjerming>
+            <sumSkattepliktigGevinstTap>-183568.00</sumSkattepliktigGevinstTap>
+            <sumFormuesverdiKontantdel>0</sumFormuesverdiKontantdel>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligselskap:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>312493659</organisasjonsnummer>
+            <organisasjonsnavn>TAPPER VIKTIG TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <boligselskapFormaal>bolig</boligselskapFormaal>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-de79396a-922d-4a89-a789-77d857de876a</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>15888598828</foedselsnummer>
+                <navn>UNØYAKTIG SKOLE</navn>
+            </oppgaveeier>
+            <boenhet>
+                <aksjeboenhetsnummer>3861</aksjeboenhetsnummer>
+                <kommunenummer>0301</kommunenummer>
+                <bolignummer>H8061</bolignummer>
+                <gatenavnOgHusnummer>Storgata 25</gatenavnOgHusnummer>
+            </boenhet>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <eierandel>
+                <eierandelTeller>1</eierandelTeller>
+                <eierandelNevner>2</eierandelNevner>
+            </eierandel>
+            <bruksoverlatt>false</bruksoverlatt>
+            <andelLikningsverdiBoenhet>0</andelLikningsverdiBoenhet>
+            <andelSkattepliktigeInntekter>1664</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>5478</andelFradragsberettigedeKostnader>
+            <andelFormue>18580</andelFormue>
+            <andelGjeld>340015</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelLikningsverdiBoenhet>0</sumAndelLikningsverdiBoenhet>
+            <sumAndelSkattepliktigeInntekter>1664</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>5478</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>18580</sumAndelFormue>
+            <sumAndelGjeld>340015</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

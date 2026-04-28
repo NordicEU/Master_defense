@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: quarantine-service
+  namespace: quarantine-system
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: quarantine-service
+  template:
+    metadata:
+      labels:
+        app: quarantine-service
+    spec:
+      serviceAccountName: quarantine-service-account
+      containers:
+        - name: quarantine-service
+          image: quarantine-service:local
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8003
+          envFrom:
+            - configMapRef:
+                name: quarantine-config
+          volumeMounts:
+            - name: quarantine-storage
+              mountPath: /app/runtime
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8003
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8003
+            initialDelaySeconds: 10
+            periodSeconds: 15
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: false
+            runAsNonRoot: false
+      volumes:
+        - name: quarantine-storage
+          persistentVolumeClaim:
+            claimName: quarantine-pvc

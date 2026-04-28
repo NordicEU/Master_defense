@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: decision-service
+  namespace: defense
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: decision-service
+  template:
+    metadata:
+      labels:
+        app: decision-service
+    spec:
+      containers:
+        - name: decision-service
+          image: decision-service:local
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8002
+          envFrom:
+            - configMapRef:
+                name: defense-config
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: decision-service
+  namespace: defense
+spec:
+  selector:
+    app: decision-service
+  ports:
+    - port: 8002
+      targetPort: 8002

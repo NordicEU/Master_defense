@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:livsforsikring:v1">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>310258520</organisasjonsnummer>
+            <organisasjonsnavn>UROMANTISK MÅTEHOLDEN APE</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-b5f6e7d9-00ae-4be0-b939-373e3fe2c5e8</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>18898998637</foedselsnummer>
+                <fornavn>ORIGINAL</fornavn>
+                <etternavn>AKTOR</etternavn>
+            </oppgaveeier>
+            <forsikringsnummer>99493050</forsikringsnummer>
+            <livdel>
+                <forsikringstype>kapitalforsikringMedSparing</forsikringstype>
+                <gjenkjoepsverdi>3321044</gjenkjoepsverdi>
+                <skattepliktigAvkastning>228376</skattepliktigAvkastning>
+            </livdel>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <livdelSumGjenkjoepsverdi>3321044</livdelSumGjenkjoepsverdi>
+            <livdelSumSkattepliktigAvkastning>228376</livdelSumSkattepliktigAvkastning>
+            <utbetalingSumSkattepliktigeBeloep>0</utbetalingSumSkattepliktigeBeloep>
+            <utbetalingSumSkattefrieBeloep>0</utbetalingSumSkattefrieBeloep>
+            <utbetalingSumFradragsberettigetTap>0</utbetalingSumFradragsberettigetTap>
+            <fortsettelsesforsikringSumInnestaaendePaaPremiefond>0</fortsettelsesforsikringSumInnestaaendePaaPremiefond>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

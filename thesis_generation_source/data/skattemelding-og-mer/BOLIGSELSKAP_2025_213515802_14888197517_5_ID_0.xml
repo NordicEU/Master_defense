@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligselskap:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>213515802</organisasjonsnummer>
+            <organisasjonsnavn>BORETTSLAGET SLEM UBESTIKKELIG HEST</organisasjonsnavn>
+        </oppgavegiver>
+        <boligselskapFormaal>bolig</boligselskapFormaal>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-1d4493c4-fea2-4185-a54a-813ae7d10f0e</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>14888197517</foedselsnummer>
+                <navn>SIGEN BOT</navn>
+            </oppgaveeier>
+            <boenhet>
+                <andelsnummer>5</andelsnummer>
+                <kommunenummer>0301</kommunenummer>
+                <bolignummer>H9087</bolignummer>
+                <gatenavnOgHusnummer>Storgata 71</gatenavnOgHusnummer>
+            </boenhet>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <eierandel>
+                <eierandelTeller>1</eierandelTeller>
+                <eierandelNevner>2</eierandelNevner>
+            </eierandel>
+            <bruksoverlatt>false</bruksoverlatt>
+            <andelLikningsverdiBoenhet>0</andelLikningsverdiBoenhet>
+            <andelSkattepliktigeInntekter>1589</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>4214</andelFradragsberettigedeKostnader>
+            <andelFormue>6685</andelFormue>
+            <andelGjeld>77149</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelLikningsverdiBoenhet>0</sumAndelLikningsverdiBoenhet>
+            <sumAndelSkattepliktigeInntekter>1589</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>4214</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>6685</sumAndelFormue>
+            <sumAndelGjeld>77149</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

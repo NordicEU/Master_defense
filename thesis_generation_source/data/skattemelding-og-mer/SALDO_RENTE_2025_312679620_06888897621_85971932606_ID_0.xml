@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>312679620</organisasjonsnummer>
+            <organisasjonsnavn>NY UTSTRAKT TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-4a0ca809-871d-4a7b-8b1a-c2f970991957</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>06888897621</foedselsnummer>
+                <fornavn>AVANSERT</fornavn>
+                <etternavn>BLANKETT</etternavn>
+            </oppgaveeier>
+            <kontonummer>85971932606</kontonummer>
+            <skattekontoEgnethet>1</skattekontoEgnethet>
+            <utlaan>1016535</utlaan>
+            <innskudd>373243</innskudd>
+            <renter>
+                <opptjenteRenter>7465</opptjenteRenter>
+                <paaloepteRenter>30496</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>373243</sumInnskudd>
+            <sumUtlaan>1016535</sumUtlaan>
+            <sumOpptjenteRenter>7465</sumOpptjenteRenter>
+            <sumPaaloepteRenter>30496</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

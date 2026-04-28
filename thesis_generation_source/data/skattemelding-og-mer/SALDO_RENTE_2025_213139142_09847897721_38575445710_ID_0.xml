@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>213139142</organisasjonsnummer>
+            <organisasjonsnavn>LEVENDE POSSESSIV STRUTS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-4bbe3154-6161-4ea8-9827-938634804835</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>09847897721</foedselsnummer>
+                <fornavn>SMIDIG</fornavn>
+                <etternavn>BYTTE</etternavn>
+            </oppgaveeier>
+            <kontonummer>38575445710</kontonummer>
+            <skattekontoEgnethet>3</skattekontoEgnethet>
+            <utlaan>801479</utlaan>
+            <innskudd>238483</innskudd>
+            <renter>
+                <opptjenteRenter>4770</opptjenteRenter>
+                <paaloepteRenter>24044</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>238483</sumInnskudd>
+            <sumUtlaan>801479</sumUtlaan>
+            <sumOpptjenteRenter>4770</sumOpptjenteRenter>
+            <sumPaaloepteRenter>24044</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligsameie:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>310932558</organisasjonsnummer>
+            <organisasjonsnavn>OVERFØLSOM FARLIG STRUTS LTD</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-117ad30c-3451-4d8c-bc53-3800f28be9f7</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>19918699697</foedselsnummer>
+                <navn>VENNLIG PRODUKSJON</navn>
+            </oppgaveeier>
+            <matrikkelnummer>
+                <kommunenummer>0301</kommunenummer>
+                <gaardsnummer>16</gaardsnummer>
+                <bruksnummer>419</bruksnummer>
+                <seksjonsnummer>726</seksjonsnummer>
+            </matrikkelnummer>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <andelSkattepliktigeInntekter>688</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>396</andelFradragsberettigedeKostnader>
+            <andelFormue>27237</andelFormue>
+            <andelGjeld>3532</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelSkattepliktigeInntekter>688</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>396</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>27237</sumAndelFormue>
+            <sumAndelGjeld>3532</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

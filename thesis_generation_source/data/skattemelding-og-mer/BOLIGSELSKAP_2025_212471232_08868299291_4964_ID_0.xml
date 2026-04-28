@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligselskap:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>212471232</organisasjonsnummer>
+            <organisasjonsnavn>BORETTSLAGET FASCINERENDE MÅTEHOLDEN HEST</organisasjonsnavn>
+        </oppgavegiver>
+        <boligselskapFormaal>bolig</boligselskapFormaal>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-97789b87-4579-4aff-aa6b-6c1a0677333d</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>08868299291</foedselsnummer>
+                <navn>SAMTIDIG KELNER</navn>
+            </oppgaveeier>
+            <boenhet>
+                <andelsnummer>4964</andelsnummer>
+                <kommunenummer>0301</kommunenummer>
+                <bolignummer>H6127</bolignummer>
+                <gatenavnOgHusnummer>Storgata 50</gatenavnOgHusnummer>
+            </boenhet>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <eierandel>
+                <eierandelTeller>1</eierandelTeller>
+                <eierandelNevner>2</eierandelNevner>
+            </eierandel>
+            <bruksoverlatt>false</bruksoverlatt>
+            <andelLikningsverdiBoenhet>0</andelLikningsverdiBoenhet>
+            <andelSkattepliktigeInntekter>1</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>9300</andelFradragsberettigedeKostnader>
+            <andelFormue>10083</andelFormue>
+            <andelGjeld>351372</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelLikningsverdiBoenhet>0</sumAndelLikningsverdiBoenhet>
+            <sumAndelSkattepliktigeInntekter>1</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>9300</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>10083</sumAndelFormue>
+            <sumAndelGjeld>351372</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

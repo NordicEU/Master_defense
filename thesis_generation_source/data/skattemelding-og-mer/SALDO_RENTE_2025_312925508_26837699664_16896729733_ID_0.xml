@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>312925508</organisasjonsnummer>
+            <organisasjonsnavn>DOBBEL FORSTANDIG TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-2b2400ba-8605-4651-bcd5-e78ffcc743d7</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>26837699664</foedselsnummer>
+                <fornavn>AKTIV</fornavn>
+                <etternavn>FLASKE</etternavn>
+            </oppgaveeier>
+            <kontonummer>16896729733</kontonummer>
+            <skattekontoEgnethet>2</skattekontoEgnethet>
+            <utlaan>916523</utlaan>
+            <innskudd>568069</innskudd>
+            <renter>
+                <opptjenteRenter>11361</opptjenteRenter>
+                <paaloepteRenter>27496</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>568069</sumInnskudd>
+            <sumUtlaan>916523</sumUtlaan>
+            <sumOpptjenteRenter>11361</sumOpptjenteRenter>
+            <sumPaaloepteRenter>27496</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

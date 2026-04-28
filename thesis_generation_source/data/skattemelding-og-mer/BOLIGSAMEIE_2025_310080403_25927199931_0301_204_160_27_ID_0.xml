@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:boligsameie:v2">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>310080403</organisasjonsnummer>
+            <organisasjonsnavn>ELEGANT PERFEKT HUND DA</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-10f7ca9e-bdb5-4361-af4f-c7792c4b2145</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>25927199931</foedselsnummer>
+                <navn>MOMENTAN PERIODE</navn>
+            </oppgaveeier>
+            <matrikkelnummer>
+                <kommunenummer>0301</kommunenummer>
+                <gaardsnummer>204</gaardsnummer>
+                <bruksnummer>160</bruksnummer>
+                <seksjonsnummer>27</seksjonsnummer>
+            </matrikkelnummer>
+            <eiertid>
+                <start>0101</start>
+                <slutt>3112</slutt>
+            </eiertid>
+            <andelSkattepliktigeInntekter>1514</andelSkattepliktigeInntekter>
+            <andelFradragsberettigedeKostnader>1048</andelFradragsberettigedeKostnader>
+            <andelFormue>58981</andelFormue>
+            <andelGjeld>63229</andelGjeld>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumAndelSkattepliktigeInntekter>1514</sumAndelSkattepliktigeInntekter>
+            <sumAndelFradragsberettigedeKostnader>1048</sumAndelFradragsberettigedeKostnader>
+            <sumAndelFormue>58981</sumAndelFormue>
+            <sumAndelGjeld>63229</sumAndelGjeld>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

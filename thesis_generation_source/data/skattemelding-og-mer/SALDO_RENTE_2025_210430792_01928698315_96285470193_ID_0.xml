@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:saldoRente:v3">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>210430792</organisasjonsnummer>
+            <organisasjonsnavn>PRATSOM RØD TIGER AS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-7e87b957-559f-4614-b8a2-1cfc9d247305</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>01928698315</foedselsnummer>
+                <fornavn>LANGFINGRET</fornavn>
+                <etternavn>AMBISJON</etternavn>
+            </oppgaveeier>
+            <kontonummer>96285470193</kontonummer>
+            <skattekontoEgnethet>2</skattekontoEgnethet>
+            <utlaan>1241669</utlaan>
+            <innskudd>198787</innskudd>
+            <renter>
+                <opptjenteRenter>3976</opptjenteRenter>
+                <paaloepteRenter>37250</paaloepteRenter>
+            </renter>
+            <kontotype>innskuddskontoINok</kontotype>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <sumInnskudd>198787</sumInnskudd>
+            <sumUtlaan>1241669</sumUtlaan>
+            <sumOpptjenteRenter>3976</sumOpptjenteRenter>
+            <sumPaaloepteRenter>37250</sumPaaloepteRenter>
+            <sumBetalteMisligholdteRenter>0</sumBetalteMisligholdteRenter>
+            <sumTilbakebetalteMisligholdteRenter>0</sumTilbakebetalteMisligholdteRenter>
+            <sumSkattepliktigGevinst>0</sumSkattepliktigGevinst>
+            <sumFradragsberettigetTap>0</sumFradragsberettigetTap>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>

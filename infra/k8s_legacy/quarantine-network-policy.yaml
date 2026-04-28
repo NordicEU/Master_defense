@@ -1,0 +1,30 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: quarantine-network-policy
+  namespace: quarantine-system
+spec:
+  podSelector:
+    matchLabels:
+      app: quarantine-service
+  policyTypes:
+    - Ingress
+    - Egress
+  ingress:
+    - from:
+        - podSelector: {}
+      ports:
+        - protocol: TCP
+          port: 8003
+  egress:
+    - to:
+        - podSelector: {}
+      ports:
+        - protocol: TCP
+          port: 8005
+        - protocol: TCP
+          port: 8006
+        - protocol: TCP
+          port: 8007
+        - protocol: TCP
+          port: 9090

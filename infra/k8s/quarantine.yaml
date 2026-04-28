@@ -1,0 +1,55 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: quarantine-pvc
+  namespace: defense
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: quarantine-service
+  namespace: defense
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: quarantine-service
+  template:
+    metadata:
+      labels:
+        app: quarantine-service
+    spec:
+      containers:
+        - name: quarantine-service
+          image: quarantine-service:local
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8003
+          envFrom:
+            - configMapRef:
+                name: defense-config
+          volumeMounts:
+            - name: quarantine-storage
+              mountPath: /app/runtime
+      volumes:
+        - name: quarantine-storage
+          persistentVolumeClaim:
+            claimName: quarantine-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: quarantine-service
+  namespace: defense
+spec:
+  selector:
+    app: quarantine-service
+  ports:
+    - port: 8003
+      targetPort: 8003

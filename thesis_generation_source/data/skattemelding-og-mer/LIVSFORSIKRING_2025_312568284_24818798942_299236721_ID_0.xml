@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:livsforsikring:v1">
+    <leveranse>
+        <kildesystem>{TESTINNSENDING}</kildesystem>
+        <oppgavegiver>
+            <organisasjonsnummer>312568284</organisasjonsnummer>
+            <organisasjonsnavn>SAMTIDIG DISKRET STRUTS</organisasjonsnavn>
+        </oppgavegiver>
+        <inntektsaar>2025</inntektsaar>
+        <oppgavegiversLeveranseReferanse>TDG-45aa95d8-51c2-45a0-b302-b1a40a4cc356</oppgavegiversLeveranseReferanse>
+        <leveransetype>ordinaer</leveransetype>
+        <oppgave>
+            <oppgaveeier>
+                <foedselsnummer>24818798942</foedselsnummer>
+                <fornavn>EFFEKTIV</fornavn>
+                <etternavn>BREIFLABB</etternavn>
+            </oppgaveeier>
+            <forsikringsnummer>299236721</forsikringsnummer>
+            <livdel>
+                <forsikringstype>individuelleLivrenter</forsikringstype>
+                <gjenkjoepsverdi>7512599</gjenkjoepsverdi>
+                <skattepliktigAvkastning>160944</skattepliktigAvkastning>
+            </livdel>
+        </oppgave>
+        <oppgaveoppsummering>
+            <antallOppgaver>1</antallOppgaver>
+            <livdelSumGjenkjoepsverdi>7512599</livdelSumGjenkjoepsverdi>
+            <livdelSumSkattepliktigAvkastning>160944</livdelSumSkattepliktigAvkastning>
+            <utbetalingSumSkattepliktigeBeloep>0</utbetalingSumSkattepliktigeBeloep>
+            <utbetalingSumSkattefrieBeloep>0</utbetalingSumSkattefrieBeloep>
+            <utbetalingSumFradragsberettigetTap>0</utbetalingSumFradragsberettigetTap>
+            <fortsettelsesforsikringSumInnestaaendePaaPremiefond>0</fortsettelsesforsikringSumInnestaaendePaaPremiefond>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>
