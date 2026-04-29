@@ -19,6 +19,7 @@ HONEYPOT_DIR = RUNTIME_DIR / "review_cases"
 MINEFIELD_DIR = RUNTIME_DIR / "defer_cases"
 ALLOW_DIR = RUNTIME_DIR / "business_accepted"
 SUBJECT_CONTROL_DIR = CONTAIN_DIR / "subject_control"
+BUSINESS_ACCEPTED_PATH = RUNTIME_DIR / "metrics" / "accepted_submissions.jsonl"
 
 QUARANTINE_ADMIN_BASE = os.getenv("QUARANTINE_ADMIN_BASE", "http://quarantine-service:8003")
 
@@ -43,6 +44,29 @@ def _load_json_files(folder: Path) -> List[Dict[str, Any]]:
                 items.append(json.load(f))
         except Exception:
             continue
+    return items
+
+
+def _load_jsonl_file(path: Path) -> List[Dict[str, Any]]:
+    items: List[Dict[str, Any]] = []
+    if not path.exists():
+        return items
+
+    try:
+        with path.open("r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    data = json.loads(line)
+                except Exception:
+                    continue
+                if isinstance(data, dict):
+                    items.append(data)
+    except Exception:
+        return []
+
     return items
 
 
@@ -130,7 +154,7 @@ def ops_overview() -> HTMLResponse:
     deceive_cases = _load_json_files(DECEIVE_DIR)
     honeypot_cases = _load_json_files(HONEYPOT_DIR)
     minefield_cases = _load_json_files(MINEFIELD_DIR)
-    allow_cases = _load_json_files(ALLOW_DIR)
+    allow_cases = _load_jsonl_file(BUSINESS_ACCEPTED_PATH)
     subject_records = _load_json_files(SUBJECT_CONTROL_DIR)
 
     restricted_count = sum(1 for s in subject_records if _safe_str(s.get("state")).upper() == "RESTRICTED")
@@ -145,7 +169,7 @@ def ops_overview() -> HTMLResponse:
         {_metric_card("Deceive cases", len(deceive_cases))}
         {_metric_card("Honeypot cases", len(honeypot_cases))}
         {_metric_card("Minefield cases", len(minefield_cases))}
-        {_metric_card("Allowed submissions", len(allow_cases))}
+        {_metric_card("Accepted requests", len(allow_cases))}
         {_metric_card("Restricted subjects", restricted_count)}
         {_metric_card("Blocked subjects", blocked_count)}
         {_metric_card("Released cases", released_count)}
@@ -352,8 +376,8 @@ def minefield_cases() -> HTMLResponse:
 
 @app.get("/ops/allow", response_class=HTMLResponse)
 def allow_cases() -> HTMLResponse:
-    data = _load_json_files(ALLOW_DIR)
-    return _page("Allowed Submissions", f"<pre>{html.escape(json.dumps(data, indent=2))}</pre>")
+    data = _load_jsonl_file(BUSINESS_ACCEPTED_PATH)
+    return _page("Accepted Requests", f"<pre>{html.escape(json.dumps(data, indent=2))}</pre>")
 
 
 @app.get("/ops/quarantine", response_class=HTMLResponse)

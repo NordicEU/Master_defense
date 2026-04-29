@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Any, Dict, List
 
 from fastapi import FastAPI, HTTPException
+from fastapi.responses import HTMLResponse
 from pydantic import BaseModel, Field
 
 app = FastAPI(title="Business App", version="1.1.0")
@@ -19,6 +20,29 @@ class BusinessSubmission(BaseModel):
     submission: Dict[str, Any] = Field(default_factory=dict)
     normalized_payload: Dict[str, Any] = Field(default_factory=dict)
     decision_result: Dict[str, Any] = Field(default_factory=dict)
+
+
+@app.get("/", response_class=HTMLResponse)
+def index() -> HTMLResponse:
+    body = """
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Business App</title>
+    </head>
+    <body style="font-family: Arial, sans-serif; max-width: 960px; margin: 40px auto; padding: 20px; line-height: 1.5;">
+        <h1>Business App</h1>
+        <p>This service receives accepted submissions from the gateway and stores them for later review.</p>
+        <ul>
+            <li><a href="/health">Health</a></li>
+            <li><a href="/accepted">Accepted submissions</a></li>
+        </ul>
+        <p><strong>POST endpoint:</strong> <code>/process</code></p>
+    </body>
+    </html>
+    """
+    return HTMLResponse(body)
 
 
 @app.get("/health")
