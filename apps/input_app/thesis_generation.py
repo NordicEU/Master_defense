@@ -155,9 +155,20 @@ def _identity_for_sample(sample: Dict[str, Any], sample_kind: str) -> Tuple[str,
     if sample_kind == "green":
         return random.choice(KNOWN_RELATIONSHIPS)
 
+    # Keep most adversarial cases contextually valid so routing diversity comes
+    # from the financial/pattern signals rather than every sample degenerating
+    # into the same identity-mismatch path.
+    if random.random() < 0.70:
+        return random.choice(KNOWN_RELATIONSHIPS)
+
     orgnr = str(sample.get("orgnr") or "").strip()
     person_id = f"9{random.randint(10_000_000_00, 99_999_999_99)}"[:11]
-    employer_id = orgnr[:9] if len(orgnr) >= 9 else f"8{random.randint(10_000_000, 99_999_999)}"[:9]
+
+    if random.random() < 0.50:
+        employer_id = random.choice([employer for _, employer in KNOWN_RELATIONSHIPS])
+    else:
+        employer_id = orgnr[:9] if len(orgnr) >= 9 else f"8{random.randint(10_000_000, 99_999_999)}"[:9]
+
     return person_id, employer_id
 
 
