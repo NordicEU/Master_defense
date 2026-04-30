@@ -1,0 +1,20 @@
+Expected route: CONTAIN
+Expected reason:
+- suspicious but not extreme
+- expenses exceed income
+- high ratio should push the case into containment
+
+Enter these values in the manual form:
+
+Person ID: 12345678901
+Employer ID: 999888777
+Declared Income: 200000
+Declared Expenses: 500000
+Employment Start: 01.01.2026
+Employment End: 31.12.2026
+
+What to watch:
+- input app result should say containment
+- ops dashboard should show containment case count increase
+- subject should become restricted in /ops/subjects
+

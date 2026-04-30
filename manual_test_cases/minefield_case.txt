@@ -1,0 +1,20 @@
+Expected route: MINEFIELD
+Expected reason:
+- extreme risk score
+- multiple hostile financial indicators
+- should cross minefield threshold
+
+Enter these values in the manual form:
+
+Person ID: 12345678901
+Employer ID: 999888777
+Declared Income: 50000
+Declared Expenses: 950000
+Employment Start: 01.01.2026
+Employment End: 31.12.2026
+
+What to watch:
+- input app result should say minefield
+- ops dashboard minefield count should increase
+- /ops/minefield should show a new minefield case
+

@@ -1,0 +1,20 @@
+Expected route: HONEYPOT
+Current status: not reliably triggerable from the manual input form
+
+Why:
+- the decision policy sends requests to HONEYPOT only when it sees probing-style
+  indicators such as recon, enumeration, scanner, automated_probe, or
+  suspicious_behavior_pattern
+- the current manual tax form only sends:
+  person_id, employer_id, income, expenses, and employment dates
+- those fields do not naturally produce the probing indicators the honeypot
+  branch is looking for
+
+Practical meaning:
+- you can test CONTAIN, DECEIVE, and MINEFIELD manually right now
+- HONEYPOT needs either:
+  1. a dedicated test payload sent directly to the gateway/API, or
+  2. an update to the generator/analyzers so the current UI can create probing signals
+
+If you want manual HONEYPOT coverage, the clean next step is to add a small
+"payload mode" or "behavior flag" field in the input app specifically for demo use.
