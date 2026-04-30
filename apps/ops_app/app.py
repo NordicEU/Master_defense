@@ -22,6 +22,7 @@ SUBJECT_CONTROL_DIR = CONTAIN_DIR / "subject_control"
 BUSINESS_ACCEPTED_PATH = RUNTIME_DIR / "metrics" / "accepted_submissions.jsonl"
 
 QUARANTINE_ADMIN_BASE = os.getenv("QUARANTINE_ADMIN_BASE", "http://127.0.0.1:8003")
+MINEFIELD_BASE = os.getenv("MINEFIELD_BASE", "http://127.0.0.1:8006")
 
 for path in [CONTAIN_DIR, DECEIVE_DIR, HONEYPOT_DIR, MINEFIELD_DIR, ALLOW_DIR, SUBJECT_CONTROL_DIR]:
     path.mkdir(parents=True, exist_ok=True)
@@ -141,6 +142,26 @@ def _post_json(url: str, payload: Dict[str, Any]) -> Dict[str, Any]:
         response = client.post(url, json=payload)
         response.raise_for_status()
         return response.json()
+
+
+def _get_json(url: str) -> Dict[str, Any]:
+    with httpx.Client(timeout=30.0) as client:
+        response = client.get(url)
+        response.raise_for_status()
+        return response.json()
+
+
+def _minefield_status_badge(status: str) -> str:
+    status = _safe_str(status).lower()
+    if status == "queued":
+        return _badge("QUEUED", "#fef3c7", "#92400e")
+    if status == "under_investigation":
+        return _badge("UNDER_INVESTIGATION", "#dbeafe", "#1e3a8a")
+    if status == "confirmed_hostile":
+        return _badge("CONFIRMED_HOSTILE", "#fee2e2", "#991b1b")
+    if status == "released":
+        return _badge("RELEASED", "#dcfce7", "#166534")
+    return _badge(status.upper() or "UNKNOWN")
 
 
 @app.get("/health")
@@ -370,8 +391,164 @@ def honeypot_cases() -> HTMLResponse:
 
 @app.get("/ops/minefield", response_class=HTMLResponse)
 def minefield_cases() -> HTMLResponse:
-    data = _load_json_files(MINEFIELD_DIR)
-    return _page("Minefield Cases", f"<pre>{html.escape(json.dumps(data, indent=2))}</pre>")
+    data = _get_json(f"{MINEFIELD_BASE}/defer/summaries/list").get("cases", [])
+    data = data if isinstance(data, list) else []
+
+    rows = []
+    for case in data:
+        defer_id = _safe_str(case.get("defer_id", "unknown"))
+        submission_id = _safe_str(case.get("submission_id", "unknown"))
+        subject_id = _safe_str(case.get("subject_id", "-"))
+        status = _safe_str(case.get("status", "queued"))
+        risk_score = case.get("risk_score", "n/a")
+        resolution_reason = _safe_str(case.get("resolution_reason", "")) or "-"
+        note_count = case.get("analyst_note_count", 0)
+        rows.append(
+            f"""
+            <tr>
+                <td><a href="/ops/minefield/{html.escape(defer_id)}">{html.escape(defer_id)}</a></td>
+                <td>{html.escape(submission_id)}</td>
+                <td>{html.escape(subject_id)}</td>
+                <td>{_minefield_status_badge(status)}</td>
+                <td>{html.escape(str(risk_score))}</td>
+                <td>{html.escape(str(note_count))}</td>
+                <td>{html.escape(resolution_reason)}</td>
+            </tr>
+            """
+        )
+
+    body = f"""
+    <h1>Minefield Cases</h1>
+    <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+        <tr>
+            <th>Minefield ID</th>
+            <th>Submission ID</th>
+            <th>Subject ID</th>
+            <th>Status</th>
+            <th>Risk Score</th>
+            <th>Notes</th>
+            <th>Resolution</th>
+        </tr>
+        {''.join(rows) or '<tr><td colspan="7">No minefield cases yet.</td></tr>'}
+    </table>
+    """
+    return _page("Minefield Cases", body)
+
+
+@app.get("/ops/minefield/{defer_id}", response_class=HTMLResponse)
+def minefield_case_detail(defer_id: str) -> HTMLResponse:
+    data = _get_json(f"{MINEFIELD_BASE}/defer/{defer_id}")
+    status = _safe_str(data.get("status", "queued"))
+    submission = data.get("submission", {})
+    normalized_payload = data.get("normalized_payload", {})
+    notes = data.get("analyst_notes", [])
+    notes = notes if isinstance(notes, list) else []
+
+    note_rows = []
+    for note in notes:
+        note_rows.append(
+            f"""
+            <tr>
+                <td>{html.escape(_safe_str(note.get("timestamp")) or "-")}</td>
+                <td>{html.escape(_safe_str(note.get("actor")) or "-")}</td>
+                <td>{html.escape(_safe_str(note.get("event")) or "-")}</td>
+                <td>{html.escape(_safe_str(note.get("note")) or "-")}</td>
+            </tr>
+            """
+        )
+
+    body = f"""
+    <h1>Minefield Case Detail</h1>
+    <div style="border:1px solid #ddd;padding:16px;border-radius:12px;">
+        <p><strong>Minefield ID:</strong> {html.escape(defer_id)}</p>
+        <p><strong>Status:</strong> {_minefield_status_badge(status)}</p>
+        <p><strong>Submission ID:</strong> {html.escape(_safe_str(submission.get("submission_id")) or "-")}</p>
+        <p><strong>Subject ID:</strong> {html.escape(_safe_str(normalized_payload.get("person_id")) or "-")}</p>
+        <p><strong>Risk Score:</strong> {html.escape(str(data.get("risk_assessment", {}).get("total_score", "n/a")))}</p>
+        <p><strong>Resolution Reason:</strong> {html.escape(_safe_str(data.get("resolution_reason")) or "-")}</p>
+        <p><strong>Updated At:</strong> {html.escape(_safe_str(data.get("updated_at")) or "-")}</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px;align-items:start;">
+        <form method="post" action="/ops/minefield/{html.escape(defer_id)}/status" style="border:1px solid #ddd;padding:16px;border-radius:12px;">
+            <h3 style="margin-top:0;">Update Status</h3>
+            <input type="hidden" name="actor" value="minefield_operator">
+            <label>Status<br>
+                <select name="status" style="width:100%;padding:10px;margin-top:6px;">
+                    <option value="queued">queued</option>
+                    <option value="under_investigation">under_investigation</option>
+                    <option value="confirmed_hostile">confirmed_hostile</option>
+                    <option value="released">released</option>
+                </select>
+            </label>
+            <label style="display:block;margin-top:12px;">Resolution reason<br>
+                <input type="text" name="resolution_reason" style="width:100%;padding:10px;margin-top:6px;">
+            </label>
+            <label style="display:block;margin-top:12px;">Note<br>
+                <textarea name="note" rows="4" style="width:100%;padding:10px;margin-top:6px;"></textarea>
+            </label>
+            <button type="submit" style="padding:10px 14px;margin-top:12px;">Save Status</button>
+        </form>
+        <form method="post" action="/ops/minefield/{html.escape(defer_id)}/notes" style="border:1px solid #ddd;padding:16px;border-radius:12px;">
+            <h3 style="margin-top:0;">Add Analyst Note</h3>
+            <input type="hidden" name="actor" value="minefield_operator">
+            <label>Note<br>
+                <textarea name="note" rows="6" style="width:100%;padding:10px;margin-top:6px;" required></textarea>
+            </label>
+            <button type="submit" style="padding:10px 14px;margin-top:12px;">Add Note</button>
+        </form>
+    </div>
+    <div style="margin-top:24px;border:1px solid #ddd;padding:16px;border-radius:12px;">
+        <h3>Analyst Notes</h3>
+        <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+            <tr>
+                <th>Timestamp</th>
+                <th>Actor</th>
+                <th>Event</th>
+                <th>Note</th>
+            </tr>
+            {''.join(note_rows) or '<tr><td colspan="4">No analyst notes yet.</td></tr>'}
+        </table>
+    </div>
+    <div style="margin-top:24px;border:1px solid #ddd;padding:16px;border-radius:12px;">
+        <h3>Full Minefield JSON</h3>
+        <pre style="white-space: pre-wrap; word-wrap: break-word;">{html.escape(json.dumps(data, indent=2))}</pre>
+    </div>
+    """
+    return _page("Minefield Case Detail", body)
+
+
+@app.post("/ops/minefield/{defer_id}/status")
+def ops_minefield_status_update(
+    defer_id: str,
+    status: str = Form(...),
+    actor: str = Form("minefield_operator"),
+    note: str = Form(""),
+    resolution_reason: str = Form(""),
+) -> RedirectResponse:
+    payload = {
+        "actor": actor,
+        "status": status,
+        "note": note or None,
+        "resolution_reason": resolution_reason or None,
+    }
+    _post_json(f"{MINEFIELD_BASE}/defer/{defer_id}/status", payload)
+    return RedirectResponse(url=f"/ops/minefield/{defer_id}", status_code=303)
+
+
+@app.post("/ops/minefield/{defer_id}/notes")
+def ops_minefield_add_note(
+    defer_id: str,
+    actor: str = Form("minefield_operator"),
+    note: str = Form(...),
+) -> RedirectResponse:
+    _post_json(
+        f"{MINEFIELD_BASE}/defer/{defer_id}/notes",
+        {
+            "actor": actor,
+            "note": note,
+        },
+    )
+    return RedirectResponse(url=f"/ops/minefield/{defer_id}", status_code=303)
 
 
 @app.get("/ops/allow", response_class=HTMLResponse)
