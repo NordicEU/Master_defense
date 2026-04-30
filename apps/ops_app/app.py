@@ -21,7 +21,7 @@ ALLOW_DIR = RUNTIME_DIR / "business_accepted"
 SUBJECT_CONTROL_DIR = CONTAIN_DIR / "subject_control"
 BUSINESS_ACCEPTED_PATH = RUNTIME_DIR / "metrics" / "accepted_submissions.jsonl"
 
-QUARANTINE_ADMIN_BASE = os.getenv("QUARANTINE_ADMIN_BASE", "http://quarantine-service:8003")
+QUARANTINE_ADMIN_BASE = os.getenv("QUARANTINE_ADMIN_BASE", "http://127.0.0.1:8003")
 
 for path in [CONTAIN_DIR, DECEIVE_DIR, HONEYPOT_DIR, MINEFIELD_DIR, ALLOW_DIR, SUBJECT_CONTROL_DIR]:
     path.mkdir(parents=True, exist_ok=True)
