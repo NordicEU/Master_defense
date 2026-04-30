@@ -1,25 +1,23 @@
 Expected route: DECEIVE
 Expected reason:
 - context mismatch / identity mismatch
-- known employer with person/employer relationship that should not validate
+- unverified employer relationship that should produce identity mismatch
 
 Enter these values in the manual form:
 
-Person ID: 22222222222
-Employer ID: 999888777
+Person ID: 12345678901
+Employer ID: 888111222
 Declared Income: 320000
-Declared Expenses: 180000
+Declared Expenses: 120000
 Employment Start: 01.01.2026
 Employment End: 31.12.2026
 
 Why this should work:
-- 22222222222 is a known person in the repo
-- 999888777 is a known employer
-- but that pair is not one of the known valid employment relationships
-- this tends to produce a contextual mismatch that can route to DECEIVE
+- the employer ID is not part of the known contextual employer set
+- that should push context validation toward identity mismatch
+- identity mismatch is one of the direct DECEIVE signals in the policy
 
 What to watch:
 - input app result should say deception/deceive
 - ops dashboard deceive count should increase
 - /ops/deceive should show a new deception case
-
