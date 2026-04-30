@@ -22,9 +22,54 @@ class BusinessSubmission(BaseModel):
     decision_result: Dict[str, Any] = Field(default_factory=dict)
 
 
+def _load_accepted_items() -> List[Dict[str, Any]]:
+    items: List[Dict[str, Any]] = []
+
+    if BUSINESS_ACCEPTED_PATH.exists():
+        with BUSINESS_ACCEPTED_PATH.open("r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    items.append(json.loads(line))
+
+    return items
+
+
 @app.get("/", response_class=HTMLResponse)
 def index() -> HTMLResponse:
-    body = """
+    items = _load_accepted_items()
+    total_accepted = len(items)
+    recent_items = list(reversed(items[-5:]))
+
+    recent_rows = []
+    for item in recent_items:
+        submission = item.get("submission", {})
+        decision = item.get("decision_result", {})
+        submission_id = str(submission.get("submission_id", "unknown"))
+        person_id = str(submission.get("person_id", "-"))
+        employer_id = str(submission.get("employer_id", "-"))
+        action = str(decision.get("action", "ALLOW"))
+        recent_rows.append(
+            f"""
+            <tr>
+                <td style="padding:10px;border-bottom:1px solid #e5e7eb;"><a href="/accepted/{submission_id}">{submission_id}</a></td>
+                <td style="padding:10px;border-bottom:1px solid #e5e7eb;">{person_id}</td>
+                <td style="padding:10px;border-bottom:1px solid #e5e7eb;">{employer_id}</td>
+                <td style="padding:10px;border-bottom:1px solid #e5e7eb;">{action}</td>
+            </tr>
+            """
+        )
+
+    if not recent_rows:
+        recent_rows.append(
+            """
+            <tr>
+                <td colspan="4" style="padding:10px;border-bottom:1px solid #e5e7eb;">No accepted submissions yet.</td>
+            </tr>
+            """
+        )
+
+    body = f"""
     <!DOCTYPE html>
     <html>
     <head>
@@ -34,11 +79,36 @@ def index() -> HTMLResponse:
     <body style="font-family: Arial, sans-serif; max-width: 960px; margin: 40px auto; padding: 20px; line-height: 1.5;">
         <h1>Business App</h1>
         <p>This service receives accepted submissions from the gateway and stores them for later review.</p>
-        <ul>
-            <li><a href="/health">Health</a></li>
-            <li><a href="/accepted">Accepted submissions</a></li>
-        </ul>
-        <p><strong>POST endpoint:</strong> <code>/process</code></p>
+        <div style="display:grid;grid-template-columns:220px 1fr;gap:16px;align-items:start;margin-top:24px;">
+            <div style="border:1px solid #d1d5db;border-radius:12px;padding:18px;">
+                <div style="font-size:14px;color:#4b5563;">Accepted requests</div>
+                <div style="font-size:40px;font-weight:700;margin-top:8px;">{total_accepted}</div>
+            </div>
+            <div style="border:1px solid #d1d5db;border-radius:12px;padding:18px;">
+                <div style="font-size:14px;color:#4b5563;margin-bottom:10px;">Quick links</div>
+                <div style="display:flex;gap:16px;flex-wrap:wrap;">
+                    <a href="/health">Health</a>
+                    <a href="/accepted">Raw accepted submissions</a>
+                </div>
+                <p style="margin-top:14px;"><strong>POST endpoint:</strong> <code>/process</code></p>
+            </div>
+        </div>
+        <div style="margin-top:28px;border:1px solid #d1d5db;border-radius:12px;padding:18px;">
+            <h2 style="margin-top:0;">Recent Accepted Submissions</h2>
+            <table style="width:100%;border-collapse:collapse;">
+                <thead>
+                    <tr>
+                        <th style="text-align:left;padding:10px;border-bottom:1px solid #d1d5db;">Submission ID</th>
+                        <th style="text-align:left;padding:10px;border-bottom:1px solid #d1d5db;">Person ID</th>
+                        <th style="text-align:left;padding:10px;border-bottom:1px solid #d1d5db;">Employer ID</th>
+                        <th style="text-align:left;padding:10px;border-bottom:1px solid #d1d5db;">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {''.join(recent_rows)}
+                </tbody>
+            </table>
+        </div>
     </body>
     </html>
     """
@@ -72,16 +142,7 @@ def process_submission(request: BusinessSubmission) -> Dict[str, Any]:
 
 @app.get("/accepted")
 def list_accepted() -> Dict[str, List[Dict[str, Any]]]:
-    items: List[Dict[str, Any]] = []
-
-    if BUSINESS_ACCEPTED_PATH.exists():
-        with BUSINESS_ACCEPTED_PATH.open("r", encoding="utf-8") as f:
-            for line in f:
-                line = line.strip()
-                if line:
-                    items.append(json.loads(line))
-
-    return {"accepted_submissions": items}
+    return {"accepted_submissions": _load_accepted_items()}
 
 
 @app.get("/accepted/{submission_id}")
