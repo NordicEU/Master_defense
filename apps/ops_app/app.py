@@ -3,6 +3,8 @@ from __future__ import annotations
 import html
 import json
 import os
+import platform
+import subprocess
 from pathlib import Path
 from typing import Any, Dict, List
 
@@ -162,6 +164,37 @@ def _minefield_status_badge(status: str) -> str:
     if status == "released":
         return _badge("RELEASED", "#dcfce7", "#166534")
     return _badge(status.upper() or "UNKNOWN")
+
+
+def _build_trace_command(target: str) -> List[str]:
+    if platform.system().lower() == "windows":
+        return ["tracert", "-d", target]
+    return ["traceroute", "-n", target]
+
+
+def _run_trace_target(target: str) -> Dict[str, Any]:
+    command = _build_trace_command(target)
+    try:
+        result = subprocess.run(
+            command,
+            capture_output=True,
+            text=True,
+            timeout=60,
+            check=False,
+        )
+        return {
+            "command": " ".join(command),
+            "stdout": result.stdout,
+            "stderr": result.stderr,
+            "returncode": result.returncode,
+        }
+    except Exception as exc:
+        return {
+            "command": " ".join(command),
+            "stdout": "",
+            "stderr": str(exc),
+            "returncode": 1,
+        }
 
 
 @app.get("/health")
@@ -443,6 +476,12 @@ def minefield_case_detail(defer_id: str) -> HTMLResponse:
     normalized_payload = data.get("normalized_payload", {})
     notes = data.get("analyst_notes", [])
     notes = notes if isinstance(notes, list) else []
+    minefield_controls = data.get("minefield_controls", {})
+    behavior_capture = minefield_controls.get("behavior_capture", {})
+    link_analysis = minefield_controls.get("link_analysis", {})
+    progressive_delay = minefield_controls.get("progressive_delay", {})
+    trace_runs = data.get("trace_runs", [])
+    trace_runs = trace_runs if isinstance(trace_runs, list) else []
 
     note_rows = []
     for note in notes:
@@ -453,6 +492,20 @@ def minefield_case_detail(defer_id: str) -> HTMLResponse:
                 <td>{html.escape(_safe_str(note.get("actor")) or "-")}</td>
                 <td>{html.escape(_safe_str(note.get("event")) or "-")}</td>
                 <td>{html.escape(_safe_str(note.get("note")) or "-")}</td>
+            </tr>
+            """
+        )
+
+    trace_rows = []
+    for trace in trace_runs:
+        trace_rows.append(
+            f"""
+            <tr>
+                <td>{html.escape(_safe_str(trace.get("timestamp")) or "-")}</td>
+                <td>{html.escape(_safe_str(trace.get("actor")) or "-")}</td>
+                <td>{html.escape(_safe_str(trace.get("target")) or "-")}</td>
+                <td>{html.escape(_safe_str(trace.get("command")) or "-")}</td>
+                <td>{html.escape(str(trace.get("returncode", "-")))}</td>
             </tr>
             """
         )
@@ -498,6 +551,39 @@ def minefield_case_detail(defer_id: str) -> HTMLResponse:
         </form>
     </div>
     <div style="margin-top:24px;border:1px solid #ddd;padding:16px;border-radius:12px;">
+        <h3 style="margin-top:0;">Run Trace</h3>
+        <p style="margin-top:0;color:#4b5563;">Run a trace from the ops host and store the result on this minefield case.</p>
+        <form method="post" action="/ops/minefield/{html.escape(defer_id)}/trace">
+            <input type="hidden" name="actor" value="minefield_operator">
+            <label>Target host or IP<br>
+                <input
+                    type="text"
+                    name="target"
+                    placeholder="8.8.8.8"
+                    style="width:100%;padding:10px;margin-top:6px;"
+                    required
+                >
+            </label>
+            <button type="submit" style="padding:10px 14px;margin-top:12px;">Run Trace</button>
+        </form>
+    </div>
+    <div style="margin-top:24px;border:1px solid #ddd;padding:16px;border-radius:12px;">
+        <h3>Controls Summary</h3>
+        <p><strong>Progressive delay:</strong> {html.escape(_safe_str(progressive_delay.get("status")) or "-")}</p>
+        <p><strong>Delay tier:</strong> {html.escape(_safe_str(progressive_delay.get("delay_tier")) or "-")}</p>
+        <p><strong>Recommended delay seconds:</strong> {html.escape(str(progressive_delay.get("recommended_delay_seconds", "n/a")))}</p>
+        <p><strong>Delay reasons:</strong> {html.escape(", ".join(progressive_delay.get("reasons", [])) or "-")}</p>
+        <p><strong>Behavior capture:</strong> {html.escape(_safe_str(behavior_capture.get("status")) or "-")}</p>
+        <p><strong>Prior same subject cases:</strong> {html.escape(str(behavior_capture.get("prior_same_subject_cases", "n/a")))}</p>
+        <p><strong>Prior same employer cases:</strong> {html.escape(str(behavior_capture.get("prior_same_employer_cases", "n/a")))}</p>
+        <p><strong>Recent related case IDs:</strong> {html.escape(", ".join(behavior_capture.get("recent_related_case_ids", [])) or "-")}</p>
+        <p><strong>Link analysis:</strong> {html.escape(_safe_str(link_analysis.get("status")) or "-")}</p>
+        <p><strong>Related case count:</strong> {html.escape(str(link_analysis.get("related_case_count", "n/a")))}</p>
+        <p><strong>Relation counts:</strong> {html.escape(json.dumps(link_analysis.get("relation_counts", {})))}</p>
+        <p><strong>Trace runs stored:</strong> {html.escape(str(len(trace_runs)))}</p>
+        <p style="margin-top:12px;"><strong>Manual trace script example:</strong> <code>py scripts/analyst_trace_target.py --case-id {html.escape(defer_id)} --target 8.8.8.8</code></p>
+    </div>
+    <div style="margin-top:24px;border:1px solid #ddd;padding:16px;border-radius:12px;">
         <h3>Analyst Notes</h3>
         <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
             <tr>
@@ -507,6 +593,19 @@ def minefield_case_detail(defer_id: str) -> HTMLResponse:
                 <th>Note</th>
             </tr>
             {''.join(note_rows) or '<tr><td colspan="4">No analyst notes yet.</td></tr>'}
+        </table>
+    </div>
+    <div style="margin-top:24px;border:1px solid #ddd;padding:16px;border-radius:12px;">
+        <h3>Trace Runs</h3>
+        <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+            <tr>
+                <th>Timestamp</th>
+                <th>Actor</th>
+                <th>Target</th>
+                <th>Command</th>
+                <th>Return Code</th>
+            </tr>
+            {''.join(trace_rows) or '<tr><td colspan="5">No trace runs stored yet.</td></tr>'}
         </table>
     </div>
     <div style="margin-top:24px;border:1px solid #ddd;padding:16px;border-radius:12px;">
@@ -548,6 +647,29 @@ def ops_minefield_add_note(
             "note": note,
         },
     )
+    return RedirectResponse(url=f"/ops/minefield/{defer_id}", status_code=303)
+
+
+@app.post("/ops/minefield/{defer_id}/trace")
+def ops_minefield_run_trace(
+    defer_id: str,
+    actor: str = Form("minefield_operator"),
+    target: str = Form(...),
+) -> RedirectResponse:
+    cleaned_target = _safe_str(target)
+    if cleaned_target:
+        trace_result = _run_trace_target(cleaned_target)
+        _post_json(
+            f"{MINEFIELD_BASE}/defer/{defer_id}/trace-results",
+            {
+                "actor": actor,
+                "target": cleaned_target,
+                "command": trace_result["command"],
+                "stdout": trace_result["stdout"],
+                "stderr": trace_result["stderr"],
+                "returncode": trace_result["returncode"],
+            },
+        )
     return RedirectResponse(url=f"/ops/minefield/{defer_id}", status_code=303)
 
 
