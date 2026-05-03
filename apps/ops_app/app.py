@@ -432,6 +432,7 @@ def minefield_cases() -> HTMLResponse:
         defer_id = _safe_str(case.get("defer_id", "unknown"))
         submission_id = _safe_str(case.get("submission_id", "unknown"))
         subject_id = _safe_str(case.get("subject_id", "-"))
+        request_ip = _safe_str(case.get("request_ip", "-")) or "-"
         status = _safe_str(case.get("status", "queued"))
         risk_score = case.get("risk_score", "n/a")
         resolution_reason = _safe_str(case.get("resolution_reason", "")) or "-"
@@ -442,6 +443,7 @@ def minefield_cases() -> HTMLResponse:
                 <td><a href="/ops/minefield/{html.escape(defer_id)}">{html.escape(defer_id)}</a></td>
                 <td>{html.escape(submission_id)}</td>
                 <td>{html.escape(subject_id)}</td>
+                <td>{html.escape(request_ip)}</td>
                 <td>{_minefield_status_badge(status)}</td>
                 <td>{html.escape(str(risk_score))}</td>
                 <td>{html.escape(str(note_count))}</td>
@@ -457,12 +459,13 @@ def minefield_cases() -> HTMLResponse:
             <th>Minefield ID</th>
             <th>Submission ID</th>
             <th>Subject ID</th>
+            <th>Request IP</th>
             <th>Status</th>
             <th>Risk Score</th>
             <th>Notes</th>
             <th>Resolution</th>
         </tr>
-        {''.join(rows) or '<tr><td colspan="7">No minefield cases yet.</td></tr>'}
+        {''.join(rows) or '<tr><td colspan="8">No minefield cases yet.</td></tr>'}
     </table>
     """
     return _page("Minefield Cases", body)
@@ -517,6 +520,7 @@ def minefield_case_detail(defer_id: str) -> HTMLResponse:
         <p><strong>Status:</strong> {_minefield_status_badge(status)}</p>
         <p><strong>Submission ID:</strong> {html.escape(_safe_str(submission.get("submission_id")) or "-")}</p>
         <p><strong>Subject ID:</strong> {html.escape(_safe_str(normalized_payload.get("person_id")) or "-")}</p>
+        <p><strong>Request IP:</strong> {html.escape(_safe_str(submission.get("request_ip")) or "-")}</p>
         <p><strong>Risk Score:</strong> {html.escape(str(data.get("risk_assessment", {}).get("total_score", "n/a")))}</p>
         <p><strong>Resolution Reason:</strong> {html.escape(_safe_str(data.get("resolution_reason")) or "-")}</p>
         <p><strong>Updated At:</strong> {html.escape(_safe_str(data.get("updated_at")) or "-")}</p>

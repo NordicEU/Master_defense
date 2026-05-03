@@ -48,6 +48,21 @@ def _safe_str(value: Any) -> str:
     return str(value or "").strip()
 
 
+def _extract_request_ip(request: Request) -> str:
+    forwarded_for = _safe_str(request.headers.get("x-forwarded-for"))
+    if forwarded_for:
+        return forwarded_for.split(",")[0].strip()
+
+    real_ip = _safe_str(request.headers.get("x-real-ip"))
+    if real_ip:
+        return real_ip
+
+    if request.client and request.client.host:
+        return _safe_str(request.client.host)
+
+    return "unknown"
+
+
 def _get_subject_control(subject_id: str) -> Dict[str, Any]:
     try:
         with httpx.Client(timeout=10.0) as client:
@@ -178,6 +193,7 @@ def _build_submission(
     employment_start: str,
     employment_end: str,
     source: str = "input_app",
+    request_ip: str | None = None,
 ) -> Dict[str, Any]:
     submission_id = str(uuid4())
     return {
@@ -189,6 +205,7 @@ def _build_submission(
         "employment_start": employment_start,
         "employment_end": employment_end,
         "source": source,
+        "request_ip": _safe_str(request_ip) or "unknown",
     }
 
 
@@ -218,6 +235,7 @@ def build_submission_payload(
     employment_start: str,
     employment_end: str,
     source: str = "input_app",
+    request_ip: str | None = None,
 ) -> Dict[str, Any]:
     return {
         "submission": _build_submission(
@@ -228,6 +246,7 @@ def build_submission_payload(
             employment_start=employment_start,
             employment_end=employment_end,
             source=source,
+            request_ip=request_ip,
         ),
         "normalized_payload": _build_normalized_payload(
             person_id=person_id,
@@ -443,6 +462,7 @@ def index(request: Request) -> HTMLResponse:
 
 @app.post("/submit", response_class=HTMLResponse)
 def submit(
+    request: Request,
     person_id: str = Form(...),
     employer_id: str = Form(...),
     declared_income: float = Form(...),
@@ -471,6 +491,7 @@ def submit(
         declared_expenses=declared_expenses,
         employment_start=employment_start,
         employment_end=employment_end,
+        request_ip=_extract_request_ip(request),
     )
 
     try:
@@ -506,12 +527,14 @@ def submit(
 
 @app.post("/generate-requests", response_class=HTMLResponse)
 def generate_requests(
+    request: Request,
     count: int = Form(10),
     sample_mode: str = Form("mixed"),
     adversarial_engine: str = Form("fallback"),
 ) -> HTMLResponse:
     count = max(1, min(int(count), 100))
     use_llm_adversary = _safe_str(adversarial_engine).lower() == "llm"
+    request_ip = _extract_request_ip(request)
     results: List[Dict[str, Any]] = []
 
     for _ in range(count):
@@ -521,6 +544,7 @@ def generate_requests(
                 sample_kind=sample_kind,
                 use_llm_adversary=use_llm_adversary,
             )
+            generated["submission"]["request_ip"] = request_ip
             payload = {
                 "submission": generated["submission"],
                 "normalized_payload": generated["normalized_payload"],
@@ -555,12 +579,14 @@ def generate_requests(
 
 @app.post("/generate-requests/json")
 def generate_requests_json(
+    request: Request,
     count: int = 10,
     sample_mode: str = "mixed",
     adversarial_engine: str = "fallback",
 ) -> Dict[str, Any]:
     count = max(1, min(int(count), 100))
     use_llm_adversary = _safe_str(adversarial_engine).lower() == "llm"
+    request_ip = _extract_request_ip(request)
     results: List[Dict[str, Any]] = []
 
     for _ in range(count):
@@ -569,6 +595,7 @@ def generate_requests_json(
             sample_kind=sample_kind,
             use_llm_adversary=use_llm_adversary,
         )
+        generated["submission"]["request_ip"] = request_ip
         payload = {
             "submission": generated["submission"],
             "normalized_payload": generated["normalized_payload"],

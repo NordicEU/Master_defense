@@ -248,6 +248,7 @@ def case_summary(case: Dict[str, Any]) -> Dict[str, Any]:
         "defer_id": case.get("defer_id"),
         "submission_id": submission.get("submission_id", "unknown"),
         "subject_id": normalized_payload.get("person_id"),
+        "request_ip": submission.get("request_ip"),
         "source_agent": case.get("source_agent", "unknown"),
         "status": case.get("status", "queued"),
         "risk_score": risk_assessment.get("total_score"),
