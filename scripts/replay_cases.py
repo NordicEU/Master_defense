@@ -4,12 +4,13 @@ import json
 import time
 from pathlib import Path
 from typing import Any
+from uuid import uuid4
 
 import httpx
 
 
 BASE_DIR = Path(__file__).resolve().parents[1]
-GATEWAY_URL = "http://127.0.0.1:8000/submit"
+GATEWAY_URL = "http://127.0.0.1:8000/route"
 
 GREEN_INPUT = BASE_DIR / "datasets" / "green_cases" / "all_documents.jsonl"
 ADVERSARIAL_INPUT = BASE_DIR / "datasets" / "adversarial_cases" / "all_documents_adversarial.jsonl"
@@ -27,16 +28,26 @@ def load_jsonl(path: Path) -> list[dict[str, Any]]:
 
 
 def build_payload(record: dict[str, Any]) -> dict[str, Any]:
+    submission_id = f"replay-{uuid4()}"
+    normalized_payload = {
+        "document_type": record.get("document_type"),
+        "person_id": record.get("person_id"),
+        "partsnummer": record.get("partsnummer"),
+        "inntektsaar": record.get("inntektsaar"),
+        "fields": record.get("fields", {}),
+        "raw_payload_keys": sorted(list(record.keys())),
+    }
+
     return {
-        "source": "dataset_replay",
-        "payload_type": "tax_document",
-        "payload": {
+        "submission": {
+            "submission_id": submission_id,
+            "source": "dataset_replay",
+            "payload_type": "tax_document",
+            "source_label": record.get("label"),
             "document_type": record.get("document_type"),
             "person_id": record.get("person_id"),
-            "partsnummer": record.get("partsnummer"),
-            "inntektsaar": record.get("inntektsaar"),
-            "fields": record.get("fields", {}),
         },
+        "normalized_payload": normalized_payload,
     }
 
 
@@ -52,7 +63,9 @@ def replay_records(client: httpx.Client, records: list[dict[str, Any]], label: s
             latency_ms = round((time.perf_counter() - started) * 1000, 2)
             response.raise_for_status()
             data = response.json()
-            decision = data.get("decision", {})
+            risk_assessment = data.get("risk_assessment", {})
+            downstream_response = data.get("downstream_response", {})
+            downstream_response = downstream_response if isinstance(downstream_response, dict) else {}
 
             results.append({
                 "dataset_label": label,
@@ -62,10 +75,18 @@ def replay_records(client: httpx.Client, records: list[dict[str, Any]], label: s
                 "source_label": record.get("label"),
                 "flow_result": data.get("flow_result"),
                 "submission_id": data.get("submission_id"),
-                "decision_action": decision.get("decision"),
-                "risk_score": decision.get("risk_score"),
-                "decision_confidence": decision.get("decision_confidence"),
-                "semantic_reasoning": data.get("semantic_result", {}).get("explanation"),
+                "decision_action": data.get("action"),
+                "decision_handoff": data.get("handoff"),
+                "risk_score": risk_assessment.get("total_score"),
+                "decision_confidence": risk_assessment.get("confidence"),
+                "semantic_reasoning": risk_assessment.get("semantic_reasoning"),
+                "downstream_id": (
+                    downstream_response.get("case_id")
+                    or downstream_response.get("defer_id")
+                    or downstream_response.get("review_id")
+                    or downstream_response.get("deception_id")
+                    or downstream_response.get("submission_id")
+                ),
                 "latency_ms": latency_ms,
             })
         except Exception as exc:
@@ -97,6 +118,7 @@ def main() -> None:
         all_results.extend(replay_records(client, green_records, "green"))
         all_results.extend(replay_records(client, adversarial_records, "adversarial"))
 
+    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     with OUTPUT_PATH.open("w", encoding="utf-8") as f:
         for item in all_results:
             f.write(json.dumps(item) + "\n")

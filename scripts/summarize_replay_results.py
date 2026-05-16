@@ -14,6 +14,12 @@ DEFAULT_OUTPUT = BASE_DIR / "runtime" / "results" / "replay_summary.md"
 
 
 def load_jsonl(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        raise FileNotFoundError(
+            f"Replay results not found: {path}\n"
+            "Run `python3 scripts/replay_cases.py` first, or pass a file with `--input`."
+        )
+
     records: list[dict[str, Any]] = []
     with path.open("r", encoding="utf-8") as f:
         for line in f:
