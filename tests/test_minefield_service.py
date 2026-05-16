@@ -45,7 +45,7 @@ def setup_minefield_dir(tmp_path: Path) -> Path:
     return minefield_dir
 
 
-def test_create_minefield_case_persists_placeholder_controls(tmp_path: Path) -> None:
+def test_create_minefield_case_persists_minefield_controls(tmp_path: Path) -> None:
     minefield_dir = setup_minefield_dir(tmp_path)
 
     response = client.post("/defer", json=make_payload())
@@ -57,8 +57,15 @@ def test_create_minefield_case_persists_placeholder_controls(tmp_path: Path) -> 
 
     stored = minefield_module.load_case(body["defer_id"])
     assert stored["status"] == "queued"
-    assert stored["minefield_controls"]["progressive_delay"]["status"] == "placeholder"
+    progressive_delay = stored["minefield_controls"]["progressive_delay"]
+    assert progressive_delay["status"] == "active"
+    assert progressive_delay["enabled"] is True
+    assert progressive_delay["recommended_delay_seconds"] == 20
+    assert "extreme_risk_score" in progressive_delay["reasons"]
+    assert stored["minefield_controls"]["behavior_capture"]["status"] == "active"
+    assert stored["minefield_controls"]["link_analysis"]["status"] == "active"
     assert stored["minefield_controls"]["auto_blacklist"]["enabled"] is False
+    assert stored["minefield_controls"]["auto_blacklist"]["status"] == "placeholder"
     assert (minefield_dir / f'{body["defer_id"]}.json').exists()
 
 
